@@ -25,3 +25,13 @@
 * `br` 줄바꿈태그(블록 태그 내에서만 사용해야 한다)(inline)
 * `strong` 경고 등 심각성이 있는 강조 표시태그(블록 내 사용,제목에는 사용안함)(inline)
 * `em` 문맥 내 강조표시태그(블록 내 사용, 제목에는 사용안함)(inline)
+* `blockquote` 긴 인용문(단락을 통으로 인용해왔을때)(block)
+* `q` 짧은 인용문(단락 내에서 부분적으로 인용해왔을때)(inline)
+* `blockquote , q의 cite 속성`
+* `sup` , `sub`
+* `code`
+* `mark` 형광펜으로 중요표시 ()
+* `&lt;` , `&gt;` , `&copy;`
+* `hr`
+* `address`
+* `del` , `s`

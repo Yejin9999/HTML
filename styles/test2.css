@@ -1,0 +1,9 @@
+body {background-color:beige;}
+h1 {color:pink; background-color:blue;}
+h2 {color:purple;}
+.group1 {background-color:lightcoral;}
+.group1 p {color:yellow;}
+#group2 {background-color:plum;}
+#group2 p {color:orangered;}
+#group2 p em {color:greenyellow;}
+p {color:aquamarine;}

@@ -57,5 +57,16 @@
 2. 각 이동대상의 첫번째 요소에 id 설정하기
 3. 위 2번으로 이동 시 클릭해야하는 대상에 href 속성으로 #아이디명 입력하기
 ## 파비콘 복붙용
-*`<link rel="shortcut icon" href="이미지경로작성위치" type="image/x-icon">
-<link rel="icon" href="이미지경로작성위치" type="image/x-icon">`
+* `<link rel="shortcut icon" href="이미지경로작성위치" type="image/x-icon">`
+* `<link rel="icon" href="이미지경로작성위치" type="image/x-icon">`
+
+# CSS
+## 디자인 속성 순서
+0. (선택자 모두 작성 후)
+1. 그룹 또는 큰 박스 요소에 배경색 적용(영역 구분)
+* 위 배경색 지정 시 밝은 영문색상 적용(헥사코드(X), RGB(X))
+* 테스트 영문색상으로 자주 사용하는 색상 : aqua lime yellow 등
+2. 레이아웃 위치, 크기 속성 적용
+3. 글자, 이미지, 비디오 등 내용 요소들 크기, 여백, 색상 등 적용
+4. 모든 속성 작업 완료 후 1번에서 적용한 임시 영문배경색 제거
+5. 완료

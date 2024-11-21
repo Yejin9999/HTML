@@ -1,0 +1,30 @@
+.profile {background-color:yellow;}
+.profile h1 {
+    font-size:3.06rem;
+    font-weight:700;
+    line-height:1.2;
+}
+.profile .photo_g {background-color:aqua;}
+.profile .photo_g .ambition {
+    line-height:1.5;
+    font-size:1.94rem;
+}
+.profile .photo_g .ambition em {
+    font-weight:700;
+    color:rgba(67,91,172,1);
+}
+.profile .photo_g .ambition strong {color:rgba(67,91,172,1);}
+.profile .photo_g p img {}
+.profile .photo_g .basic {background-color:lightskyblue;}
+.profile .photo_g .basic li {line-height:1.5;}
+.profile .photo_g .basic li img {}
+.profile h2 {
+    font-size:1.56rem;
+    line-height:1.2;
+}
+.profile .experience {background-color:lime;}
+.profile .experience li {line-height:1.7;}
+.profile .experience li span {}
+.profile .experience li .content {font-weight:500;}
+
+

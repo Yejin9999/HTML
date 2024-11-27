@@ -1,0 +1,62 @@
+#wrap {}
+#wrap header {}
+#wrap header h1 {}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+#wrap header nav {}
+#wrap header nav ul {}
+#wrap header nav ul li {}
+#wrap header nav ul li a {}
+#wrap header .right_menu {}
+#wrap header .right_menu a {}
+#wrap header .right_menu ul {}
+#wrap header .right_menu ul li {}
+#wrap header .right_menu ul li img {}
+/*========header 끝======*/
+#wrap main {}
+#wrap main .path {}
+#wrap main .path a {}
+#wrap main .path em {}
+#wrap main h1 {}
+#wrap main > p {}
+#wrap main .bg {}
+#wrap main .bg .first_contents {}
+#wrap main .bg .first_contents p {}
+#wrap main .bg .first_contents p img {}
+#wrap main .bg .first_contents ol {}
+#wrap main .bg .first_contents ol .number_one {}
+#wrap main .bg .first_contents ol li {}
+#wrap main .bg .first_contents ol li h2 {}
+/* =======첫번째 단락 끝======================== */
+#wrap main .bg .second_contents {}
+#wrap main .bg .second_contents ol {}
+#wrap main .bg .second_contents ol .number_two {}
+#wrap main .bg .second_contents ol li {}
+#wrap main .bg .second_contents ol li h2 {}
+#wrap main .bg .second_contents p {}
+#wrap main .bg .second_contents p img {}
+/* ===============두번째 단락 끝================= */
+#wrap main .bg .third_contents {}
+#wrap main .bg .third_contents p {}
+#wrap main .bg .third_contents p img {}
+#wrap main .bg .third_contents ol {}
+#wrap main .bg .third_contents ol .number_three {}
+#wrap main .bg .third_contents ol li {}
+#wrap main .bg .third_contents ol li h2 {}
+/* ===================세번째 단락 끝=============== */
+#wrap main .bg .fourth_contents {}
+#wrap main .bg .fourth_contents ol {}
+#wrap main .bg .fourth_contents ol .number_four {}
+#wrap main .bg .fourth_contents ol li {}
+#wrap main .bg .fourth_contents ol li h2 {}
+#wrap main .bg .fourth_contents p {}
+#wrap main .bg .fourth_contents p img {}
+/* ==================네번째 단락 끝===================== */
+#wrap main .bg .fifth_contents {}
+#wrap main .bg .fifth_contents p {}
+#wrap main .bg .fifth_contents p img {}
+#wrap main .bg .fifth_contents ol {}
+#wrap main .bg .fifth_contents ol .number_five {}
+#wrap main .bg .fifth_contents ol li {}
+#wrap main .bg .fifth_contents ol li h2 {}
+/* ===============다섯번째 단락 끝========================= */

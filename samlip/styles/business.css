@@ -1,62 +1,240 @@
-#wrap {}
-#wrap header {}
+#wrap {
+    background-color:lightgray;
+}
+#wrap header {
+    background-color:#fff;
+}
 #wrap header h1 {}
 #wrap header h1 a {}
 #wrap header h1 a img {}
-#wrap header nav {}
+#wrap header nav {
+    background-color:yellow;
+}
 #wrap header nav ul {}
 #wrap header nav ul li {}
-#wrap header nav ul li a {}
-#wrap header .right_menu {}
+#wrap header nav ul li a {
+    font-size:1.13rem;
+    font-weight:600;
+}
+#wrap header .right_menu {
+    background-color:orange;
+}
 #wrap header .right_menu a {}
 #wrap header .right_menu ul {}
 #wrap header .right_menu ul li {}
 #wrap header .right_menu ul li img {}
 /*========header 끝======*/
-#wrap main {}
-#wrap main .path {}
+#wrap main {
+    background-color:#fff;
+}
+#wrap main .path {
+    background-color:#f9f9f9;
+    text-align:right;
+    padding:10px 80px 10px 0;
+}
 #wrap main .path a {}
-#wrap main .path em {}
-#wrap main h1 {}
-#wrap main > p {}
-#wrap main .bg {}
-#wrap main .bg .first_contents {}
-#wrap main .bg .first_contents p {}
-#wrap main .bg .first_contents p img {}
-#wrap main .bg .first_contents ol {}
-#wrap main .bg .first_contents ol .number_one {}
-#wrap main .bg .first_contents ol li {}
-#wrap main .bg .first_contents ol li h2 {}
+#wrap main .path a img {
+    margin:0 12px;
+}
+#wrap main .path em {
+    font-weight:600;
+}
+#wrap main h1 {
+    font-weight:700;
+    font-size:3.13rem;
+    text-align:center;
+    margin:80px 0 25px 0;
+}
+#wrap main > p {
+    text-align:center;
+    margin:25px 0 50px 0;
+    font-size:1.19rem;
+    font-weight:500;
+}
+#wrap main .bg {
+    background-color:#f9f9f9;
+    padding-top:68px;
+}
+#wrap main .bg .first_contents {
+    width:1140px;
+    margin:0 auto;
+    padding-bottom:48px;
+    margin-bottom:59px;
+    paddig-top:104px;
+}
+#wrap main .bg .first_contents p {
+    display:inline-block;
+}
+#wrap main .bg .first_contents p img {
+}
+#wrap main .bg .first_contents ol {
+    display:inline-block;
+    margin-left:22px;
+    width:358px;
+}
+#wrap main .bg .first_contents ol .number_one {
+    font-size:6.25rem;
+    font-weight:700;
+    letter-spacing:-0.05rem;
+    color:rgba(0,0,0,0.1);
+}
+#wrap main .bg .first_contents ol li span {
+    letter-spacing:-0.01rem;
+    line-height:1.7;
+    color:#555;
+}
+#wrap main .bg .first_contents ol li h2 {
+    font-weight:600;
+    font-size:1.88rem;
+    margin:12px 0;
+}
 /* =======첫번째 단락 끝======================== */
-#wrap main .bg .second_contents {}
-#wrap main .bg .second_contents ol {}
-#wrap main .bg .second_contents ol .number_two {}
-#wrap main .bg .second_contents ol li {}
-#wrap main .bg .second_contents ol li h2 {}
-#wrap main .bg .second_contents p {}
-#wrap main .bg .second_contents p img {}
+#wrap main .bg .second_contents {
+    width:1140px;
+    margin:0 auto;
+    margin-bottom:48px;
+    padding-bottom:59px;
+    paddig-top:104px;
+}
+#wrap main .bg .second_contents ol {
+    display:inline-block;
+    width:353px;
+    margin-left:106px;
+}
+#wrap main .bg .second_contents ol .number_two {
+    font-size:6.25rem;
+    font-weight:700;
+    letter-spacing:-0.05rem;
+    color:rgba(0,0,0,0.1);
+}
+#wrap main .bg .second_contents ol li h2 {
+    font-weight:600;
+    font-size:1.88rem;
+    margin:12px 0;
+}
+#wrap main .bg .second_contents ol li span {
+    letter-spacing:-0.01rem;
+    line-height:1.7;
+    color:#555;
+}
+#wrap main .bg .second_contents p {
+    display:inline-block;
+}
+#wrap main .bg .second_contents p img {
+    margin-left:22px;
+}
 /* ===============두번째 단락 끝================= */
-#wrap main .bg .third_contents {}
-#wrap main .bg .third_contents p {}
+#wrap main .bg .third_contents {
+    width:1140px;
+    margin:0 auto;
+    padding-bottom:48px;
+    paddig-top:104px;
+    margin-bottom:59px;
+}
+#wrap main .bg .third_contents p {
+    display:inline-block;
+}
 #wrap main .bg .third_contents p img {}
-#wrap main .bg .third_contents ol {}
-#wrap main .bg .third_contents ol .number_three {}
-#wrap main .bg .third_contents ol li {}
-#wrap main .bg .third_contents ol li h2 {}
+#wrap main .bg .third_contents ol {
+    display:inline-block;
+    margin-left:22px;
+    width:358px;
+}
+#wrap main .bg .third_contents ol .number_three {
+    font-size:6.25rem;
+    font-weight:700;
+    letter-spacing:-0.05rem;
+    color:rgba(0,0,0,0.1);
+}
+#wrap main .bg .third_contents ol li span {
+    letter-spacing:-0.01rem;
+    line-height:1.7;
+    color:#555;
+}
+#wrap main .bg .third_contents ol li h2 {
+    font-weight:600;
+    font-size:1.88rem;
+    margin:12px 0;
+}
 /* ===================세번째 단락 끝=============== */
-#wrap main .bg .fourth_contents {}
-#wrap main .bg .fourth_contents ol {}
-#wrap main .bg .fourth_contents ol .number_four {}
-#wrap main .bg .fourth_contents ol li {}
-#wrap main .bg .fourth_contents ol li h2 {}
-#wrap main .bg .fourth_contents p {}
-#wrap main .bg .fourth_contents p img {}
+#wrap main .bg .fourth_contents {
+    width:1140px;
+    margin:0 auto;
+    padding-bottom:48px;
+    paddig-top:104px;
+    margin-bottom:59px;
+}
+#wrap main .bg .fourth_contents ol {
+    display:inline-block;
+    width:353px;
+    margin-left:106px;
+}
+#wrap main .bg .fourth_contents ol .number_four {
+    font-size:6.25rem;
+    font-weight:700;
+    letter-spacing:-0.05rem;
+    color:rgba(0,0,0,0.1);
+}
+#wrap main .bg .fourth_contents ol li span {
+    letter-spacing:-0.01rem;
+    line-height:1.7;
+    color:#555;
+}
+#wrap main .bg .fourth_contents ol li h2 {
+    font-weight:600;
+    font-size:1.88rem;
+    margin:12px 0;
+}
+#wrap main .bg .fourth_contents p {
+    display:inline-block;
+}
+#wrap main .bg .fourth_contents p img {
+    margin-left:22px;
+}
 /* ==================네번째 단락 끝===================== */
-#wrap main .bg .fifth_contents {}
-#wrap main .bg .fifth_contents p {}
+#wrap main .bg .fifth_contents {
+    width:1140px;
+    margin:0 auto;
+    padding-bottom:48px;
+    paddig-top:104px;
+}
+#wrap main .bg .fifth_contents p {
+    display:inline-block;
+}
+    
 #wrap main .bg .fifth_contents p img {}
-#wrap main .bg .fifth_contents ol {}
-#wrap main .bg .fifth_contents ol .number_five {}
-#wrap main .bg .fifth_contents ol li {}
-#wrap main .bg .fifth_contents ol li h2 {}
+#wrap main .bg .fifth_contents ol {
+    display:inline-block;
+    margin-left:22px;
+    width:358px;
+}
+#wrap main .bg .fifth_contents ol .number_five {
+    font-size:6.25rem;
+    font-weight:700;
+    letter-spacing:-0.05rem;
+    color:rgba(0,0,0,0.1);
+}
+#wrap main .bg .fifth_contents ol li span {
+    letter-spacing:-0.01rem;
+    line-height:1.7;
+    color:#555;
+}
+#wrap main .bg .fifth_contents ol li h2 {
+    font-size:1.88rem;
+    font-weight:600;
+    margin:12px 0;
+}
 /* ===============다섯번째 단락 끝========================= */
+/* =====================footer 시작======================== */
+#wrap footer {}
+#wrap footer .ft_left {}
+#wrap footer .ft_left .ft_tap {}
+#wrap footer .ft_left .ft_tap a {}
+#wrap footer .ft_left .ft_tap a em {}
+#wrap footer .ft_left .ft_tap a img {}
+#wrap footer .ft_left address {}
+#wrap footer .ft_left address em {}
+#wrap footer .ft_left p {}
+#wrap footer .ft_right {}
+#wrap footer .ft_right a {}
+#wrap footer .ft_right a img {}

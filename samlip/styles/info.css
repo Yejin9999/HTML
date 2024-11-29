@@ -37,7 +37,11 @@
     font-size:0.88rem;
     font-weight:600;
 }
-#wrap main .path img{margin:0 12px;}
+#wrap main .path img{
+    margin:0 12px;
+    position:relative;
+    top:2.5px;
+}
 #wrap main h1 {
     font-size:3.13rem;
     font-weight:700;
@@ -108,12 +112,16 @@
 }
 #wrap main .bg .goal_contents li:nth-child(2) span {color:#000;}
 #wrap main .bg .strategy_contents {
+    /* display:inline-block; */
+    width:max-content; margin:0 auto;
+    /* width:1000px; margin:0 auto; 일반적으로 이 공식이 많이쓰임*/
 }
+#wrap main .bg .strategy_contents::after {clear:both; content:''; display:block;}
 #wrap main .bg .strategy_contents dl {
     background-color:#eee;
     width:180px;
     height:180px;
-    display:inline-block;
+    float:left;
     border-radius:50%;
     margin-left:-10px;
     /*padding-top:47.5px;*/

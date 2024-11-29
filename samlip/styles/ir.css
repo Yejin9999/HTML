@@ -32,6 +32,7 @@
     background-color:yellow;
     width:1140px;
     margin:0 auto;
+    overflow:hidden;
 }
 #wrap main .bg .corporate li {
     background-color:aqua;
@@ -42,13 +43,18 @@
     background-size:100px auto;
     background-image:url(../images/info/cr01.png); /*공통*/
     padding:30px;
-    display:inline-block;
+    float:left;
     margin-right:42.5px;
 }
 #wrap main .bg .corporate li:nth-child(1) {}
 #wrap main .bg .corporate li:nth-child(2) {background-image:url(../images/info/cr02.png);}
 #wrap main .bg .corporate li:nth-child(3) {background-image:url(../images/info/cr03.png);}
 #wrap main .bg .corporate li:nth-child(4) {margin:0;}
+#wrap main .bg .corporate li h2 {
+    font-weight:700;
+}
+#wrap main .bg .corporate li p {}
+#wrap footer {}
 /* #wrap main .bg .corporate li:nth-child(1) {
     background-image:url(../images/info/cr01.png);
     background-repeat:no-repeat;
@@ -67,11 +73,4 @@
     background-size:100px auto;
 }
 #wrap main .bg .corporate li:nth-child(4) {
-    background:lime url(../images/info/cr01.png) no-repeat 80% 85%; */
-}
-#wrap main .bg .corporate li h2 {
-    font-size:1.38rem;
-    font-weight:600;
-}
-#wrap main .bg .corporate li p {}
-#wrap footer {}
+background:lime url(../images/info/cr01.png) no-repeat 80% 85%;}*/

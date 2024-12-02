@@ -1,22 +1,19 @@
-#wrap {
-    background-color:brown;
-}
+#wrap {}
 #wrap header {
     background-color:rgba(0,0,0,0.1);
     padding:21px 80px;
     /*header는 모든 사이트에서 높이 고정되는 경우가 90% 이상이다.*/
     height:80px;
     /* overflow:hidden; (높이가 안쓰여져 있을 경우)*/
+    position:fixed; width:100%; left:0; top:0; z-index:999;
 }
 #wrap header h1 {
-    background-color:aqua;
     float:left;
     padding-top:3px;
 }
 #wrap header h1 a {}
 #wrap header h1 a img {}
 #wrap header nav {
-    background-color:coral;
     float:right;
 }
 #wrap header nav ul {
@@ -43,44 +40,175 @@
     border-radius:25px;
 }
 /* ---------------헤더끝---------------- */
-#wrap main {
-    background-color:lime;
-}
+#wrap main {}
 /*======메인 1~4행 공통선택자===========*/
-#wrap main .container {
-    background-color:beige;
-}
+#wrap main .container {}
 #wrap main .container .contents {
-    background-color:hotpink;
+    width:1440px; height:100vh;
+    margin:0 auto;
+    background-color:rgba(255,255,255,0.3); /*제거용*/
 }
 #wrap main .container .contents .txt {
-    background-color:aqua;
+    background-color:orange;
 }
-#wrap main .container .contents .txt h1 {}
-#wrap main .container .contents .txt h1 span {}
-#wrap main .container .contents .txt p {}
+#wrap main .container .contents .txt h1 {
+    font-size:4.38rem;
+    font-weight:700;
+    line-height:1.3;
+    color:#fff;
+}
+#wrap main .container .contents .txt h1 span {
+    color:#5EE1FF;
+    font-weight:700;
+}
+#wrap main .container .contents .txt h1+p {
+    font-weight:500;
+    font-size:1.5rem;
+    color:#FFFFFF;
+    letter-spacing:-0.02rem;
+    line-height:1.5;
+    margin:20px 0;
+}
 /*======메인 1행 결제편리함===========*/
 #wrap main .pay {
     background-image:url(../images/row1.jpg);
+    background-size:cover;
 }
-#wrap main .pay .contents {}
-#wrap main .pay .contents .txt {}
+#wrap main .pay .contents {
+    position:relative;
+}
+#wrap main .pay .contents .txt {
+    padding-top:231px;
+}
 #wrap main .pay .contents .txt h1 {}
 #wrap main .pay .contents .txt h1 span {}
 #wrap main .pay .contents .txt p {}
-#wrap main .pay .contents .txt .bnr_btn_wrap {
-    background-color:purple;
+#wrap main .pay .contents .txt .bnr_btn_wrap {}
+#wrap main .pay .contents .txt .bnr_btn_wrap > * {
+    margin-right:10px;
 }
 #wrap main .pay .contents .txt .bnr_btn_wrap .prev {}
 #wrap main .pay .contents .txt .bnr_btn_wrap .prev img {}
-#wrap main .pay .contents .txt .bnr_btn_wrap .progress {}
+#wrap main .pay .contents .txt .bnr_btn_wrap .progress {
+    display:inline-block;
+    width:100px; height:2px;
+    background-color:rgba(255,255,255,0.3);
+    position:relative;
+    bottom:12px;
+
+}
+#wrap main .pay .contents .txt .bnr_btn_wrap .progress:nth-child(4) {
+    background-color:rgba(255,255,255,1);
+}
 #wrap main .pay .contents .txt .bnr_btn_wrap .pause {}
 #wrap main .pay .contents .txt .bnr_btn_wrap .pause img {}
 #wrap main .pay .contents .txt .bnr_btn_wrap .next {}
 #wrap main .pay .contents .txt .bnr_btn_wrap .next img {}
 #wrap main .pay .contents .scroll {
-    background-color:brown;
+    position:absolute;
+    right:0; bottom:43px;
 }
-#wrap main .pay .contents .scroll span:nth-child(1) {}
-#wrap main .pay .contents .scroll .scroll_bg {}
-#wrap main .pay .contents .scroll .scroll_bg .bar {}
+#wrap main .pay .contents .scroll span:nth-child(1) {
+    text-transform:uppercase;
+    font-size:0.88rem;
+    line-height:1.3;
+    font-weight:500;
+    color:#fff;
+    position:relative; top:6px;
+}
+#wrap main .pay .contents .scroll .scroll_bg {
+    display:inline-block;
+    background-color:#555;
+    width:12px; height:30px;
+    border-radius:6px;
+}
+#wrap main .pay .contents .scroll .scroll_bg .bar {
+    display:inline-block;
+    background-color:#fff;
+    width:8px; height:8px;
+    border-radius:50%;
+    position:relative;
+    top:-5px;
+    left:2px;
+}
+/* ======메인 2행 서비스 시작============ */
+#wrap main .service {
+    background-color:gray;
+    background-image:url(../images/row2.jpg);
+    background-size:cover;
+}
+#wrap main .service .contents {
+    background-color:aqua;
+    overflow:hidden;
+}
+#wrap main .service .contents .txt {
+    background-color:orange;
+    padding-top:311px;
+    float:left;
+}
+#wrap main .service .contents .txt .sub_title {
+    font-size:1.56rem;
+    font-weight:600;
+    color:#fff;
+    letter-spacing:-0.02rem;
+}
+#wrap main .service .contents .txt h1 {
+    margin:20px 0;
+}
+#wrap main .service .contents .txt p {
+    width:507px;
+}
+/* =======왼쪽부분 끝==================================== */
+#wrap main .service .contents .img_text {
+    float:right;
+}
+/* ------신용카드부분시작--- */
+#wrap main .service .contents .img_text .card {
+    background-color:#fff;
+    background-image:url(../images/card_bg1.jpg);
+    background-position:top;
+    background-repeat:repeat-x;
+    background-size:200px;
+    display:inline-block;
+    width:331px;
+    padding-top:200px;
+    margin-top:157px;
+    border-radius:25px;
+}
+#wrap main .service .contents .img_text .card .card_contents {
+    padding:30px 20px 20px 20px;
+}
+#wrap main .service .contents .img_text .card .card_contents h2 {
+    margin-top:30px;
+    font-weight:600;
+    font-size:1.56rem;
+}
+#wrap main .service .contents .img_text .card .card_contents p {
+    line-height:1.5;
+    margin:35px 0;
+}
+#wrap main .service .contents .img_text .card .card_contents a {
+    width:291px;
+    border-top:1px solid #000;
+}
+#wrap main .service .contents .img_text .card .card_contents a span {
+    font-weight:600;
+}
+#wrap main .service .contents .img_text .card .card_contents a img {
+    float:right;
+    left:20px;
+}
+/* ------가상계좌부분시작------- */
+#wrap main .service .contents .img_text .account {
+    background-color:lime;
+    opacity:0.6;
+    display:inline-block;
+    width:331px;
+}
+#wrap main .service .contents .img_text .account .account_contents {
+}
+#wrap main .service .contents .img_text .account .account_contents h2 {}
+#wrap main .service .contents .img_text .account .account_contents p {}
+#wrap main .service .contents .img_text .account .account_contents a {}
+#wrap main .service .contents .img_text .account .account_contents a span {}
+#wrap main .service .contents .img_text .account .account_contents a img {}

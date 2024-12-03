@@ -42,7 +42,8 @@
 /* ---------------헤더끝---------------- */
 #wrap main {}
 /*======메인 1~4행 공통선택자===========*/
-#wrap main .container {}
+#wrap main .container {
+}
 #wrap main .container .contents {
     width:1440px; height:100vh;
     margin:0 auto;
@@ -50,6 +51,12 @@
 }
 #wrap main .container .contents .txt {
     background-color:orange;
+}
+#wrap main .container .contents .txt .sub_title {
+    font-size:1.56rem;
+    font-weight:600;
+    color:#fff;
+    letter-spacing:-0.02rem;
 }
 #wrap main .container .contents .txt h1 {
     font-size:4.38rem;
@@ -133,25 +140,17 @@
 }
 /* ======메인 2행 서비스 시작============ */
 #wrap main .service {
-    background-color:gray;
     background-image:url(../images/row2.jpg);
     background-size:cover;
 }
 #wrap main .service .contents {
-    background-color:aqua;
     overflow:hidden;
 }
 #wrap main .service .contents .txt {
-    background-color:orange;
     padding-top:311px;
     float:left;
 }
-#wrap main .service .contents .txt .sub_title {
-    font-size:1.56rem;
-    font-weight:600;
-    color:#fff;
-    letter-spacing:-0.02rem;
-}
+
 #wrap main .service .contents .txt h1 {
     margin:20px 0;
 }
@@ -164,32 +163,33 @@
 }
 /* ------신용카드부분시작--- */
 #wrap main .service .contents .img_text .card {
-    background-color:#fff;
     background-image:url(../images/card_bg1.jpg);
-    background-position:top;
-    background-repeat:repeat-x;
-    background-size:200px;
+    background-size:331px;
     display:inline-block;
     width:331px;
     padding-top:200px;
     margin-top:157px;
+    margin-right:22px;
     border-radius:25px;
+    overflow:hidden;
 }
 #wrap main .service .contents .img_text .card .card_contents {
-    padding:30px 20px 20px 20px;
+    padding:30px 20px 30px 20px;
+    background-color:#fff;
 }
 #wrap main .service .contents .img_text .card .card_contents h2 {
-    margin-top:30px;
     font-weight:600;
     font-size:1.56rem;
 }
 #wrap main .service .contents .img_text .card .card_contents p {
     line-height:1.5;
     margin:35px 0;
+    color:#555;
 }
 #wrap main .service .contents .img_text .card .card_contents a {
-    width:291px;
+    display:block;
     border-top:1px solid #000;
+    padding-top:10px;
 }
 #wrap main .service .contents .img_text .card .card_contents a span {
     font-weight:600;
@@ -200,15 +200,85 @@
 }
 /* ------가상계좌부분시작------- */
 #wrap main .service .contents .img_text .account {
-    background-color:lime;
+    background-image:url(../images/card_bg2.jpg);
+    background-size:331px;
     opacity:0.6;
     display:inline-block;
     width:331px;
+    padding-top:200px;
+    position:relative;
+    top:126px;
+    border-radius:25px;
+    overflow:hidden;
 }
 #wrap main .service .contents .img_text .account .account_contents {
+    padding:30px 20px 30px 20px;
+    background-color:#fff;
 }
-#wrap main .service .contents .img_text .account .account_contents h2 {}
-#wrap main .service .contents .img_text .account .account_contents p {}
-#wrap main .service .contents .img_text .account .account_contents a {}
-#wrap main .service .contents .img_text .account .account_contents a span {}
-#wrap main .service .contents .img_text .account .account_contents a img {}
+#wrap main .service .contents .img_text .account .account_contents h2 {
+    font-weight:600;
+    font-size:1.56rem;
+}
+#wrap main .service .contents .img_text .account .account_contents p {
+    line-height:1.5;
+    margin:35px 0;
+    color:#555;
+}
+#wrap main .service .contents .img_text .account .account_contents a {
+    display:block;
+    border-top:1px solid #000;
+    padding-top:10px;
+}
+#wrap main .service .contents .img_text .account .account_contents a span {
+    font-weight:600;
+}
+#wrap main .service .contents .img_text .account .account_contents a img {
+    float:right;
+    left:20px;
+}
+/* ==========================================3행 시작========================== */
+#wrap main .different {
+    background-image:url(../images/row3.jpg);
+    background-size:cover;
+}
+#wrap main .different .contents {}
+#wrap main .different .contents .txt {
+    text-align:center;
+    padding-top:162px;
+}
+#wrap main .different .contents .txt .sub_title {}
+#wrap main .different .contents .txt .sub_title h1 {}
+#wrap main .different .contents .txt .sub_title h1 span {}
+#wrap main .different .contents .txt .sub_title h1+p {} /* (인접형제 선택자)h1 바로 다음에 있는 p */
+#wrap main .different .contents ol {
+    overflow:hidden;
+} 
+#wrap main .different .contents ol li {
+    width:290px; height:290px;
+    border-radius:50%;
+    border:20px solid rgba(255,255,255,0.5);
+    position:relative; /* after 가상요소 부모설정 */
+    float:left;
+    margin-right:93.33px;
+} 
+#wrap main .different .contents ol li::after {
+    content:'';
+    display:block;
+    background-color:#fff;
+    width:250px; height:250px; border-radius:50%;
+    position:absolute;  left:0; top:0;
+    z-index:200;
+}
+#wrap main .different .contents ol li:nth-child(4) {
+    margin:0;
+} /* 마진을 따로 설정해줘야되서 */
+#wrap main .different .contents ol li > * {
+    position:relative;
+    z-index:300;
+    text-align:center;
+}
+#wrap main .different .contents ol li .num {
+    margin-bottom:10px;
+    padding-top:67px;
+} 
+#wrap main .different .contents ol li h2 {} 

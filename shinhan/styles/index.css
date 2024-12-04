@@ -282,3 +282,51 @@
     padding-top:67px;
 } 
 #wrap main .different .contents ol li h2 {} 
+/* ====================4행시작================================= */
+#wrap main .question {
+    background-color:beige;
+}
+#wrap main .question .contents {
+    padding-top:220px;
+}
+#wrap main .question .contents .txt {margin-bottom:76px;}
+#wrap main .question .contents .txt .sub_title {
+    margin-bottom:20px;
+    color:#5e91ff;
+}
+#wrap main .question .contents .txt h1 {color:#000;}
+#wrap main .question .contents .q_contents {
+    background-color:yellow;
+}
+#wrap main .question .contents .q_contents a {
+    background-color:aqua;
+    overflow:hidden;
+    display:block; padding:20px; margin-bottom:20px;
+}
+#wrap main .question .contents .q_contents a:nth-child(3) {margin:0;}
+#wrap main .question .contents .q_contents a .q_left {
+    background-color:coral;
+    float:left;
+}
+#wrap main .question .contents .q_contents a .q_left .category {
+    font-size:1.25rem;
+    line-height:1.5;
+}
+#wrap main .question .contents .q_contents a .q_left img {
+    position:relative;
+    top:5px;
+    margin:7px 20px;
+}
+#wrap main .question .contents .q_contents a .q_left em {
+    font-weight:500;
+    font-size:1.56rem;
+    line-height:1.5;
+}
+#wrap main .question .contents .q_contents a .q_down {
+    background-color:skyblue;
+    float:right;
+}
+#wrap main .question .contents .q_contents a .q_down img {
+}
+/* inline-block으로 한다면 text:aline; 써야하는데 서로 방향이 다른상황에서 text:aline은 같은 행에서 두방향으로 하는건 불가능 */
+/* 그러기 때문에 이 상황에선 같은 부모내에서 방향 다르게 설정가능한 float 써야함 */

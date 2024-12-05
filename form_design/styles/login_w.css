@@ -1,0 +1,87 @@
+.wrap {
+    width:500px;
+    margin:0 auto;
+}
+.wrap .title {
+    padding-top:84px;
+}
+.wrap .title h1 {
+    letter-spacing:-0.2rem;
+    margin-bottom:25px;
+    font-weight:800;
+    font-size:4.38rem;
+}
+.wrap .title p {
+    font-size:1.25rem;
+    margin-bottom:57px;
+}
+.wrap #login_page {
+}
+.wrap #login_page fieldset {}
+.wrap #login_page fieldset legend {}
+.wrap #login_page fieldset .email_address {
+    margin-bottom:38px;
+}
+.wrap #login_page fieldset .email_address dt {
+    font-weight:700;
+    font-size:1.88rem;
+    margin-bottom:18px;
+    letter-spacing:-0.02rem;
+}
+.wrap #login_page fieldset .email_address dd {}
+.wrap #login_page fieldset .email_address dd input {
+    border:1px solid #aaa;
+    border-radius:10px;
+    width:100%;
+    padding:15px;
+}
+.wrap #login_page fieldset .password {
+    margin-bottom:38px;
+}
+.wrap #login_page fieldset .password dt {
+    font-weight:700;
+    font-size:1.88rem;
+    margin-bottom:18px;
+    letter-spacing:-0.02rem;
+}
+.wrap #login_page fieldset .password dd {}
+.wrap #login_page fieldset .password dd input {
+    border:1px solid #aaa;
+    border-radius:10px;
+    width:100%;
+    padding:15px;
+}
+.wrap #login_page fieldset .btn_group {
+}
+.wrap #login_page fieldset .btn_group dt {
+    font-weight:700;
+    font-size:1.88rem;
+    margin-bottom:32px;
+    letter-spacing:-0.02rem;
+}
+.wrap #login_page fieldset .btn_group dt dd {}
+.wrap #login_page fieldset .btn_group .login_btn {
+    width:100%;
+    padding:15px;
+    border:1px solid #aaa;
+    border-radius:10px;
+    margin-bottom:18px;
+    font-weight:700;
+    color:#fff;
+    background-color:#222;
+}
+.wrap #login_page fieldset .btn_group .login_interlock {
+    width:100%;
+    padding:15px;
+    border:1px solid #aaa;
+    border-radius:10px;
+    font-weight:700;
+    margin-bottom:62px;
+}
+.wrap #login_page fieldset .join_link {
+    text-align:center;
+}
+.wrap #login_page fieldset .join_link a {
+    font-weight:700;
+    letter-spacing:-0.02rem;
+}

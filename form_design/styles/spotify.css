@@ -1,0 +1,166 @@
+body {background-color:#222;}
+main {
+    margin:97px auto 0;
+    width:500px;
+    /* 부모의 너비값이 고정이 되어있을 경우 그자식.자손 중 블록에 해당하는 모든 요소는 부모의 너비만큼(w:100%) 자동으로 크기를
+    인식하기 때문에 꼭필요한 경우가 아니라면 너비를 입력하지 않아도 된다. */
+}
+main h1 {text-align:center; margin:0 0 87px;}
+main h1 a {}
+main h1 img {}
+main .tab_menu {
+    text-align:center;
+    margin-bottom:55px;
+    margin:0 0 52px;
+}
+main .tab_menu .active {border-bottom:3px solid #1ED760;}
+/* active는 사용자가 언제든지 바꾸면 바뀔 수 있으므로 여백을 여기에 주면안되고 따로 수열선택자로  */
+main .tab_menu a {
+    display:inline-block;
+    padding:5px 10px;
+    color:#fff;
+    font-size:1.25rem;
+    letter-spacing:-0.02rem;
+}
+/* main .tab_menu a:nth-child(1) {margin-right:136px;} */
+main .tab_menu a:first-child {margin-right:136px;} /* first-child last-child */
+main .tab_wrap {}
+main .tab_wrap #inFrm {display:none;}
+main .tab_wrap #inFrm ul {
+    margin-bottom:31px;
+}
+main .tab_wrap #inFrm ul li {
+    background-color:#fff;
+    padding:25px 40px;
+    border-radius:36.5px;
+}
+main .tab_wrap #inFrm ul li:first-child {margin:0 0 14px;}
+main .tab_wrap #inFrm ul li input {
+    width:100%;
+    letter-spacing:-0.02rem;
+}
+main .tab_wrap #inFrm ul li input::placeholder {color:#aaa;}
+main .tab_wrap #inFrm ul li input[name$=name] {}
+main .tab_wrap #inFrm ul li input[name$=pw] {}
+main .tab_wrap #inFrm .stay_in {
+    margin:0 0 33px;
+}
+main .tab_wrap #inFrm .stay_in #stay_on {}
+/* html checkbox,radio는 css에서 세부디자인이 불가능하기 때문에 reset에서 appearance:none으로 숨겨놓고
+포토샵,피그마 등을 이용한 별도의 아이콘 디자인을 준비한 후 background-image로 연결해야한다. 숨겨놓은 checkbox, radio는 그대상과 연결한 label을 통해
+선택이 가능하게 하고 배경이미지 또한 label에 대부분 선언해준다. */
+/* 상태선택자(a,form에서 주로 사용) */
+main .tab_wrap #inFrm .stay_in #stay_on:checked+label {
+    background-image:url(../images/check_y.png);
+    background-repeat:no-repeat;
+    padding-left:34px;
+    background-position:0 2px;
+}
+main .tab_wrap #inFrm .stay_in label {
+    color:#fff;
+    background-image:url(../images/check_n.png);
+    background-repeat:no-repeat;
+    padding-left:34px;
+    background-position:0 2px;
+}
+main .tab_wrap #inFrm .btn {}
+main .tab_wrap #inFrm .btn .sign_in_btn{
+    background-color:#1ED760;
+    color:#fff;
+    border-radius:36.5px;
+    padding:15px 0; width:100%;
+}
+main .tab_wrap #inFrm .forget_pw {
+    color:#fff; text-align:center;
+    display:block; margin:14px 0 0;
+}
+/* sign up 클릭 시 나오는 */
+main .tab_wrap #upFrm {background-color:brown;}
+main .tab_wrap #upFrm .user_id {
+    margin:20px 0;
+}
+main .tab_wrap #upFrm .user_id h1 {
+    text-align:left;
+    font-size:1.25rem;
+    color:#fff;
+    margin-bottom:10px;
+}
+main .tab_wrap #upFrm .user_id .name {
+    background-color:#fff;
+    padding:25px 40px;
+    border-radius:36.5px;
+    margin:10px 0;
+}
+main .tab_wrap #upFrm .user_id .name input[name=make_id] {
+    width:100%
+}
+main .tab_wrap #upFrm .user_id .name input::placeholder {color:#aaa;}
+main .tab_wrap #upFrm .user_id .guidelines {font-size:0.88rem; color:#fff;}
+main .tab_wrap #upFrm .user_id .name_btn {
+    background-color:#555;
+    margin:10px 0 20px 0;
+    padding:25px 40px;
+    border-radius:36.5px;
+    text-align:center;
+}
+main .tab_wrap #upFrm .user_id .name_btn .check_id_btn {color:#aaa;}
+/* ================================아이디============================= */
+main .tab_wrap #upFrm .user_pw {}
+main .tab_wrap #upFrm .user_pw h1 {
+    text-align:left;
+    font-size:1.25rem;
+    color:#fff;
+    margin-bottom:10px;
+}
+main .tab_wrap #upFrm .user_pw .pw {
+    background-color:#fff;
+    padding:25px 40px;
+    border-radius:36.5px;
+    margin:10px 0;
+}
+main .tab_wrap #upFrm .user_pw .pw input[name=make_pw] {
+    width:100px;
+}
+main .tab_wrap #upFrm .user_pw .pw input::placeholder {color:#aaa;}
+main .tab_wrap #upFrm .user_pw .guidelines {font-size:0.88rem; color:#fff;}
+main .tab_wrap #upFrm .user_pw .pw_btn {
+    padding:25px 40px;
+    background-color:#555;
+    margin:10px 0 20px 0;
+    border-radius:36.5px;
+    text-align:center;
+}
+main .tab_wrap #upFrm .user_pw .pw_btn .check_pw_btn {color:#aaa;}
+/* ===================비밀번호============================================== */
+main .tab_wrap #upFrm .user_email {background-color:orange;}
+main .tab_wrap #upFrm .user_email h1 {
+    text-align:left;
+    font-size:1.25rem;
+    color:#fff;
+    margin-bottom:10px;
+}
+main .tab_wrap #upFrm .user_email .mail {
+    padding:25px 40px;
+    background-color:#fff;
+    border-radius: 36.5px;
+    margin:10px 0;
+}
+main .tab_wrap #upFrm .user_email .mail input[name=make_mail] {color:#aaa;}
+main .tab_wrap #upFrm .user_email p {margin:10px 0;}
+main .tab_wrap #upFrm .user_email .option {}
+main .tab_wrap #upFrm .user_email .option select {
+    width:100%; 
+    
+    background-color:#555; color:#aaa;}
+main .tab_wrap #upFrm .user_email .option select option {}
+main .tab_wrap #upFrm .user_email .guidelines {font-size:0.88rem; color:#fff;}
+/* ==========================이메일=========================================== */
+main .tab_wrap #upFrm .user_phone {}
+main .tab_wrap #upFrm .user_phone h1 {}
+main .tab_wrap #upFrm .user_phone .phone {}
+main .tab_wrap #upFrm .user_phone .phone input[name=make_number] {}
+main .tab_wrap #upFrm .user_phone .phone_btn {}
+main .tab_wrap #upFrm .user_phone .phone_btn .check_phone_btn {}
+/* ==============================핸드폰===================================== */
+main .tab_wrap #upFrm .btn {}
+main .tab_wrap #upFrm .btn .sign_in_btn{}

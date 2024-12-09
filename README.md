@@ -59,7 +59,7 @@
 ## 파비콘 복붙용
 * `<link rel="shortcut icon" href="이미지경로작성위치" type="image/x-icon">`
 * `<link rel="icon" href="이미지경로작성위치" type="image/x-icon">`
-
+* css 연결링크 위에다 쓰기
 # CSS
 ## 디자인 속성 순서
 0. (선택자 모두 작성 후)

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN | spotify</title>
+    <link rel="shortcut icon" href="./images/spotify_logo.png" type="image/x-icon">
+    <link rel="icon" href="./images/spotify_logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/spotify.css" rel="stylesheet">
+    <style>
+        /* 속성선택자 연습용 (주로 input에서 많이사용)*/
+        /* input[name*=user] {background-color:aqua;} */
+    </style>
+</head>
+<body>
+    <main>
+        <h1><a href="#"><img src="./images/Logo.svg.svg" alt="spotify"></a></h1>
+        <div class="tab_menu">
+            <a href="#" class="active">SIGN IN</a>
+            <a href="#">SIGN UP</a>
+        </div>
+        <div class="tab_wrap">
+            <!-- SIGN IN 클릭시 출력내용 -->
+            <form action="#" method="post" id="inFrm">
+                <ul>
+                    <li><input type="text" name="user_name" placeholder="Username" required></li>
+                    <li><input type="password" name="user_pw" placeholder="Password" required></li>
+                </ul>
+                <div class="stay_in">
+                    <input type="checkbox" name="login_stay" value="stay_on" id="stay_on">
+                    <label for="stay_on">stay signed in</label>
+                </div>
+                <p class="btn"><button type="submit" class="sign_in_btn">SIGN IN</button></p>
+                <a href="#" class="forget_pw">Forget Password</a>
+            </form>
+            <!-- SIGN UP 클릭시 출력내용 -->
+            <form action="#" method="post" id="upFrm">
+                <div class="user_id">
+                    <h1>user name</h1>
+                    <p class="name"><input type="text" name="make_id" placeholder="Username" required></p>
+                    <p class="guidelines">4~12 letter combination with lowercase letters and numbers in English</p>
+                    <p class="name_btn"><button type="button" class="check_id_btn">Check redundancy</button></p>
+                </div>
+                <div class="user_pw">
+                    <h1>password</h1>
+                    <p class="pw"><input type="password" name="make_pw" placeholder="Password" required></p>
+                    <p class="guidelines">8-20 characters a combination of two or more upper case letters, numbers, special characters</p>
+                    <p class="pw_btn"><button type="button" class="check_pw_btn">Double-check</button></p>
+                </div>
+                <div class="user_email">
+                    <h1>e-mail</h1>
+                    <p class="mail"><input type="text" name="make_mail" placeholder="E-mail address" required></p>
+                    <p>@</p>
+                    <p class="option">
+                        <select name="mail_address">
+                            <option value="selection">selection</option>
+                            <option value="direct">Direct input</option>
+                            <option value="naver">naver.com</option>
+                            <option value="gmail">gmail.com</option>
+                            <option value="kakao">kakao.com</option>
+                            <option value="daum">daum.net</option>
+                        </select>
+                    </p>
+                    <p class="guidelines">To make your account more secure, Sign up please proceed with the email authentication.</p>
+                </div>
+                <div class="user_phone">
+                    <h1>phone number</h1>
+                    <p class="phone"><input type="number" name="make_number" placeholder="User phone number" required></p>
+                    <p class="phone_btn"><button type="button" class="check_phone_btn">Get authentication number</button></p>
+                </div>
+                <p class="btn"><button type="button" class="sign_in_btn">SIGN IN</button></p>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

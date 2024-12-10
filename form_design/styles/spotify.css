@@ -1,6 +1,6 @@
 body {background-color:#222;}
 main {
-    margin:97px auto 0;
+    margin:97px auto;
     width:500px;
     /* 부모의 너비값이 고정이 되어있을 경우 그자식.자손 중 블록에 해당하는 모든 요소는 부모의 너비만큼(w:100%) 자동으로 크기를
     인식하기 때문에 꼭필요한 경우가 아니라면 너비를 입력하지 않아도 된다. */
@@ -13,7 +13,7 @@ main .tab_menu {
     margin-bottom:55px;
     margin:0 0 52px;
 }
-main .tab_menu .active {border-bottom:3px solid #1ED760;}
+main .tab_menu .active {}
 /* active는 사용자가 언제든지 바꾸면 바뀔 수 있으므로 여백을 여기에 주면안되고 따로 수열선택자로  */
 main .tab_menu a {
     display:inline-block;
@@ -24,6 +24,7 @@ main .tab_menu a {
 }
 /* main .tab_menu a:nth-child(1) {margin-right:136px;} */
 main .tab_menu a:first-child {margin-right:136px;} /* first-child last-child */
+main .tab_menu a:last-child {border-bottom:3px solid #1ED760;}
 main .tab_wrap {}
 main .tab_wrap #inFrm {display:none;}
 main .tab_wrap #inFrm ul {
@@ -75,7 +76,7 @@ main .tab_wrap #inFrm .forget_pw {
     display:block; margin:14px 0 0;
 }
 /* sign up 클릭 시 나오는 */
-main .tab_wrap #upFrm {background-color:brown;}
+main .tab_wrap #upFrm {}
 main .tab_wrap #upFrm .user_id {
     margin:20px 0;
 }
@@ -119,7 +120,7 @@ main .tab_wrap #upFrm .user_pw .pw {
     margin:10px 0;
 }
 main .tab_wrap #upFrm .user_pw .pw input[name=make_pw] {
-    width:100px;
+    width:100%;
 }
 main .tab_wrap #upFrm .user_pw .pw input::placeholder {color:#aaa;}
 main .tab_wrap #upFrm .user_pw .guidelines {font-size:0.88rem; color:#fff;}
@@ -132,7 +133,7 @@ main .tab_wrap #upFrm .user_pw .pw_btn {
 }
 main .tab_wrap #upFrm .user_pw .pw_btn .check_pw_btn {color:#aaa;}
 /* ===================비밀번호============================================== */
-main .tab_wrap #upFrm .user_email {background-color:orange;}
+main .tab_wrap #upFrm .user_email {}
 main .tab_wrap #upFrm .user_email h1 {
     text-align:left;
     font-size:1.25rem;
@@ -145,22 +146,41 @@ main .tab_wrap #upFrm .user_email .mail {
     border-radius: 36.5px;
     margin:10px 0;
 }
-main .tab_wrap #upFrm .user_email .mail input[name=make_mail] {color:#aaa;}
+main .tab_wrap #upFrm .user_email .mail input[name=make_mail] {width:100%;}
+main .tab_wrap #upFrm .user_email .mail input::placeholder {color:#aaa;}
 main .tab_wrap #upFrm .user_email p {margin:10px 0;}
+main .tab_wrap #upFrm .user_email p:nth-child(3) {text-align:center; color:#fff;}
 main .tab_wrap #upFrm .user_email .option {}
 main .tab_wrap #upFrm .user_email .option select {
-    width:100%; 
-    
-    background-color:#555; color:#aaa;}
-main .tab_wrap #upFrm .user_email .option select option {}
+    width:100%; padding:25px 40px; border-radius:36.5px;
+    background-image:url(../images/arrow_drop_down_spotify.png);
+    background-repeat:no-repeat;
+    background-position:60%;
+    background-size:20px;
+    background-color:#555; color:#aaa; text-align:center;
+}
+main .tab_wrap #upFrm .user_email .option select option {font-size:0.88rem; color:#fff;}
 main .tab_wrap #upFrm .user_email .guidelines {font-size:0.88rem; color:#fff;}
 /* ==========================이메일=========================================== */
-main .tab_wrap #upFrm .user_phone {}
-main .tab_wrap #upFrm .user_phone h1 {}
-main .tab_wrap #upFrm .user_phone .phone {}
-main .tab_wrap #upFrm .user_phone .phone input[name=make_number] {}
-main .tab_wrap #upFrm .user_phone .phone_btn {}
-main .tab_wrap #upFrm .user_phone .phone_btn .check_phone_btn {}
+main .tab_wrap #upFrm .user_phone {margin-top:20px;}
+main .tab_wrap #upFrm .user_phone h1 {
+    text-align:left; font-size:1.25rem; color:#fff; margin:10px 0;
+}
+main .tab_wrap #upFrm .user_phone .phone {
+    padding:25px 40px;
+    background-color:#fff;
+    border-radius:36.5px;
+}
+main .tab_wrap #upFrm .user_phone .phone input[name=make_number] {width:100%;}
+main .tab_wrap #upFrm .user_phone .phone input::placeholder {color:#aaa}
+main .tab_wrap #upFrm .user_phone .phone_btn {
+    width:100%; padding:25px 40px; margin:10px 0 35px;
+    background-color:#555; border-radius:36.5px; text-align:center;
+}
+main .tab_wrap #upFrm .user_phone .phone_btn .check_phone_btn {color:#aaa;}
 /* ==============================핸드폰===================================== */
-main .tab_wrap #upFrm .btn {}
-main .tab_wrap #upFrm .btn .sign_in_btn{}
+main .tab_wrap #upFrm .btn {
+background-color:#1ED760; padding:25px;
+border-radius:36.5px; text-align:center;
+}
+main .tab_wrap #upFrm .btn .sign_in_btn{font-weight:700; color:#fff;}

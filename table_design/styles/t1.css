@@ -1,0 +1,16 @@
+.book {margin:206px auto 0; border-radius:20px; overflow:hidden;}
+.book tr {
+    background-color:#f2f2f2;
+    text-align:center;
+}
+.book tr:first-child {background-color:#FF0066;}
+.book tr:nth-child(3) {background-color:#e8e8e8; border:2px solid #FF0066; color:#FF0066}
+.book tr:nth-child(5) {background-color:#e8e8e8;}
+.book tr:first-child th {
+    color:#fff; font-size:1.13rem; font-weight:700;
+    padding:20px 0; text-align:center;
+}
+/* 같은 수직라인에서 대표하는 첫번째에 크기를 주면 같은 수직라인에 모든 크기가 같이적용됨 */
+.book tr th {}
+.book tr th:first-child {font-weight:500; width:250px; padding-left:16px;}
+.book tr td {font-weight:500; width:100px; padding:16px 0; text-align:center;}

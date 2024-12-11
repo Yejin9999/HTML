@@ -1,0 +1,35 @@
+main {
+    width:782px;
+    margin:146px auto 0;
+}
+main .title {
+    overflow:hidden;
+}
+main .title h1 {float:left; font-weight:700; font-size:1.25rem;}
+main .title p {float:right;}
+main .pay {background-color:#f2f2f2; margin:19px 0; width:100%;}
+/* =========thead 부분============= */
+main .pay thead {border:2px solid #000; border-left:0; border-right:0;}
+main .pay thead tr {}
+main .pay thead tr th {width:calc(100% / 5);}
+/* =======================공통선택자 만들기==================== */
+main .pay thead tr th,
+main .pay tbody tr th,
+main .pay tbody tr td {
+    text-align:center; padding:16px 0;
+    font-weight:500;
+}
+main .pay thead tr th:first-child,
+main .pay tbody tr th{
+    font-size:1.06rem; font-weight:700;
+}
+/* =========tbody 부분============= */
+main .pay tbody {}
+main .pay tbody tr {}
+main .pay tbody tr:nth-child(4) {background-color:#A8D18D;}
+main .pay tbody tr th {}
+main .pay tbody tr td {}
+/* ==========p부분============== */
+main > p {
+    text-align:right;
+}

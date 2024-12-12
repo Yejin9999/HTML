@@ -1,0 +1,151 @@
+#wrap {}
+#wrap header { 
+    height:80px;
+    padding:0 80px;
+    overflow:hidden;
+}
+#wrap header h1 {float:left; padding-top:24px;}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+#wrap header nav {
+    float:right;
+    padding-top:21px;
+}
+#wrap header nav ul {}
+#wrap header nav ul li {
+    float:left; margin:10px 0 0 60px;
+}
+#wrap header nav ul li:first-child {margin-left:0;}
+#wrap header nav ul li a {font-weight:600; font-size:1.13rem; letter-spacing:-0.01rem;}
+#wrap header nav ul .developer_center a {
+    color:#0046FF;
+    margin-right:0; padding:10px 20px;
+    border:1px solid #0046FF; border-radius:20px;
+}
+/* ===============header 끝========================== */
+#wrap main {}
+#wrap main .title_bnr {
+    background-image:url(../images/customer/title.jpg);
+    background-size:cover;
+    text-align:center; height:300px; padding:98.5px 0 0; /* 높이값을 썻기때문에 하단패딩은 안줘도됨 */
+    position:relative;
+}
+#wrap main .title_bnr::after {content:''; width:100%; height:300px; display:block; /* 블록처리해서 크기조절할수있다 */ 
+    background-color:rgba(0,0,0,0.6); 
+    position:absolute; left:0; top:0; z-index:10;
+}
+/* 원본사진과 다르게 배경이 어둡거나 밝게 설정된 경우는 사진이 적용된 부모 요소기준 마지막 자식 위치에 가상 자식(=after)을 생성하여 반투명한 배경색(rgba)을 적용한 경우다 */
+#wrap main .title_bnr h1,
+#wrap main .title_bnr p {letter-spacing:-0.02rem; color:#fff; position:relative; z-index:20;}
+/* ==공통선택자== */
+#wrap main .title_bnr h1 {margin-bottom:30px; font-weight:700; font-size:3.00rem;}
+#wrap main .title_bnr p {font-weight:600; font-size:1.56rem;}
+/* ==================배너부분============================================== */
+#wrap main .tab_menu {
+    text-align:center;
+    margin-top:100px; padding-bottom:25px;
+}
+#wrap main .tab_menu a {
+    margin-right:12px; padding:12px 32px; boder:1px solid #eee; border-radius:20px;
+    background-color:#fff; font-weight:700; font-size:1.13rem; letter-spacing:-0.02rem;
+    display:inline-block;
+}
+#wrap main .tab_menu a:last-child {margin:0;}
+#wrap main .tab_menu .active {color:#fff; background-color: #0046FF; border:0;}
+/* ==================탭메뉴부분======================= */
+#wrap main .tab_container {width:720px; margin:10px auto 0;} 
+/* 서브페이지 기준 로그인, 회원가입, 설문조사, 게시판 등으로 form위주로 구성된 페이지일 경우 form은 너비가 넓을 수록 
+디자인이 시각적으로 보기좋지 않아서 실제사이트 너비보다 작게 사용하는 경우가 많다.*/
+#wrap main .tab_container #credicCardFrm,
+#wrap main .tab_container #accountFrm,
+#wrap main .tab_container #transferFrm {}
+/* ==========신용/가상/계좌 내용그룹선택자========================================= */
+#wrap main .tab_container #credicCardFrm {width:720px;}
+#wrap main .tab_container #credicCardFrm dl {}
+#wrap main .tab_container #credicCardFrm dl dt {margin-bottom:12px; font-size:1.13rem; font-weight:600; letter-spacing:-0.02rem;}
+#wrap main .tab_container #credicCardFrm dl dd {position:relative;}
+#wrap main .tab_container #credicCardFrm dl dd input {}
+#wrap main .tab_container #credicCardFrm dl dd input[type=number]::placeholder {color:#aaa;}
+
+#wrap main .tab_container #credicCardFrm dl dd .accept_num, 
+#wrap main .tab_container #credicCardFrm dl dd .payment_amount,
+#wrap main .tab_container #credicCardFrm dl dd .payment_date {
+    color:#000;
+    padding:15px 20px; width:100%; margin-bottom:35px;
+    border:1px solid #ccc; border-radius:5px; 
+    letter-spacing:-0.02rem;
+}
+#wrap main .tab_container #credicCardFrm dl dd .payment_date {
+    background:#fff url(../images/customer/calendar_month.png) no-repeat 20px center;
+    padding-left:55px;
+}
+#wrap main .tab_container #credicCardFrm dl dd .payment_date::-webkit-calendar-picker-indicator {
+    background:none;
+    position:absolute; width:100%;
+}
+/* ==============입력3개칸 끝========================================= */
+#wrap main .tab_container #credicCardFrm ul {padding-bottom:25px;}
+#wrap main .tab_container #credicCardFrm ul li {
+    background-image:url(../images/customer/kid_star.png);
+    background-repeat:no-repeat;
+    /* background:url() no-repeat left center; */
+    font-size:0.81rem; letter-spacing:-0.05rem; color:#888;
+    padding-left:18px;
+}
+/* white-space:nowrap; 줄바꿈안하겠다 */
+#wrap main .tab_container #credicCardFrm ul li:nth-child(2) {margin:16px 0;}
+/* =================주의사항 목록 끝=========================================== */
+#wrap main .tab_container #credicCardFrm h2 {font-size:1.13rem; font-weight:600; letter-spacing:-0.02rem; margin-bottom:16px;}
+#wrap main .tab_container #credicCardFrm .consent_box {
+    margin:0 0 16px; padding:20px;
+    border:1px solid #ccc; border-radius:10px; 
+    height:238px; overflow:auto;
+}
+#wrap main .tab_container #credicCardFrm .consent_box h3,
+#wrap main .tab_container #credicCardFrm .consent_box p,
+#wrap main .tab_container #credicCardFrm .consent_box h4 {
+    font-size:0.88rem; font-weight:600; letter-spacing:-0.02rem; margin-bottom:20px;
+}
+/* ===공통선택자==== */
+#wrap main .tab_container #credicCardFrm .consent_box h3 {}
+#wrap main .tab_container #credicCardFrm .consent_box p {font-weight:400; line-height:1.4rem; color:#888;}
+#wrap main .tab_container #credicCardFrm .consent_box h4 {}
+/* =====표부분=============== */
+#wrap main .tab_container #credicCardFrm .consent_box .info {}
+#wrap main .tab_container #credicCardFrm .consent_box .info tbody {}
+#wrap main .tab_container #credicCardFrm .consent_box .info tbody tr {}
+#wrap main .tab_container #credicCardFrm .consent_box .info tbody tr > * {
+    font-size:0.81rem; letter-spacing:-0.02rem; font-weight:500; 
+    padding:15px 0 15px 10px;
+}
+#wrap main .tab_container #credicCardFrm .consent_box .info tbody th {
+    width:150px;
+    border:1px solid #aaa; border-left:0;
+}
+#wrap main .tab_container #credicCardFrm .consent_box .info tbody td {
+    width:520px; border:1px solid #aaa; border-right:0; 
+}
+/* ==========================tbody 끝===================================================== */
+#wrap main .tab_container #credicCardFrm .all_agree_box {margin-bottom:100px;}
+#wrap main .tab_container #credicCardFrm .all_agree_box input[value*=all] {}
+#wrap main .tab_container #credicCardFrm .all_agree_box input[value*=all]:checked+label {
+    background-image:url(../images/customer/check_box_y.png);
+}
+#wrap main .tab_container #credicCardFrm .all_agree_box label {
+    background-image:url(../images/customer/check_box_n.png);
+    background-repeat:no-repeat;
+    background-position:left center;
+    padding-left:24px;
+
+}
+/* input radio checkbox는 css개별디자인이 불가능하기 때문에 항상 input의 형제가 되는 또다른 요소(label span 등)를 생성해서 배경이미지를 연결해야한다. */
+/* input 형제요소를 생성했다면 그 형제 요소선택자는 input 비활성화 배경이미지를 가지고 input:checked 상태선택자를 활용하여 선택됬을 시 활성화 배경이미지로 변경해준다. */
+#wrap main .tab_container #credicCardFrm .btn {
+    text-align:center;
+}
+#wrap main .tab_container #credicCardFrm .btn .about_btn {
+    color:#fff;
+    width:160px; background-color:#0046FF; 
+    padding:16px 0;  border-radius:8px;
+    margin:100px 0; display:inline-block;}
+/* ==============신용카드 탭 클릭시 활성화 내용 끝============================================================= */

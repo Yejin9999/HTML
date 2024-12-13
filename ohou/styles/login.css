@@ -33,3 +33,22 @@ main #joinFrm .name_input dd {}
 main #joinFrm .name_input dd p {}
 main #joinFrm .name_input dd input {}
 /* =================닉네임 끝================================== */
+main #joinFrm .all_agree_box {}
+main #joinFrm .all_agree_box h2 {}
+main #joinFrm .all_agree_box #agree_all {}
+main #joinFrm .all_agree_box #check_all {}
+main #joinFrm .all_agree_box #check_all span {}
+main #joinFrm .all_agree_box #agree_age {}
+main #joinFrm .all_agree_box #check_age {}
+main #joinFrm .all_agree_box #check_age em {}
+main #joinFrm .all_agree_box #agree_terms {}
+main #joinFrm .all_agree_box #check_terms {}
+main #joinFrm .all_agree_box #check_terms em {}
+main #joinFrm .all_agree_box a {}
+main #joinFrm .all_agree_box a img {}
+main #joinFrm .all_agree_box #agree_sms {}
+main #joinFrm .all_agree_box #check_sms {}
+main #joinFrm .all_agree_box #check_sms span {}
+main #joinFrm .btn {}
+main #joinFrm .btn .about_btn {}
+main #joinFrm p {}

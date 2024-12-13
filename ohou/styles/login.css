@@ -1,0 +1,35 @@
+main {}
+main a {}
+main a img {}
+main .simple_join {background-color:coral;}
+main .simple_join h1 {}
+main .simple_join h1 p {}
+main .simple_join h1 p a {}
+main .simple_join h1 p a img {}
+/* ============간편로그인 부분 끝============= */
+main #joinFrm {}
+main #joinFrm .email_input {}
+main #joinFrm .email_input dt {}
+main #joinFrm .email_input dd {}
+main #joinFrm .email_input dd input {}
+main #joinFrm .email_input dd select {}
+main #joinFrm .email_input dd select option {}
+main #joinFrm .email_input dd .email_btn {}
+/* ===========이메일 부분 끝========================== */
+main #joinFrm .pw_input {}
+main #joinFrm .pw_input dt {}
+main #joinFrm .pw_input dd {}
+main #joinFrm .pw_input dd p {}
+main #joinFrm .pw_input dd input {}
+/* ==============비밀번호 끝-=================== */
+main #joinFrm .pw_input {}
+main #joinFrm .pw_input dt {}
+main #joinFrm .pw_input dd {}
+main #joinFrm .pw_input dd input {}
+/* ============비밀번호 확인 끝========================== */
+main #joinFrm .name_input {}
+main #joinFrm .name_input dt {}
+main #joinFrm .name_input dd {}
+main #joinFrm .name_input dd p {}
+main #joinFrm .name_input dd input {}
+/* =================닉네임 끝================================== */

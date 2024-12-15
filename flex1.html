@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./styles/reset.css" rel="stylesheet">
+    <style>
+        .box {
+            background-color:aqua; margin:10px;
+        }
+        .box li {width:50px; height:50px; background-color:yellow;}
+        .box li:nth-child(even) {background-color:coral;} /* odd-홀수 even-짝수 */
+        /* display:inline-block , float는 정렬하는 요소에 적용하는 정렬속성이다. */
+        /* flex는 정렬하는 요소의 부모에게 적용하는 정렬속성이다. */
+        .a {
+            display:flex; /* flex 속성의 기본값 -> 자식요소를 옆으로 정렬한다. */
+            /* flex-direction:column-reverse; */ /* 유튜브댓글같은경우 */ /* (column / row) 많이 사용 */
+            width:150px; height:400px; /* 너비값이 높이값보다 1px이 부족하더라도 바로 줄바꿈됨 */
+            /* flex-wrap:wrap-reverse; */ /* 실제로는 줄바꿈함 안함 (wrap / no-wrap)을 많이씀 */
+            /* flex-flow:column wrap; */ /* 수직으로 정렬하는데 줄바꿈한다. */ 
+            /* flex-flow:column nowrap; /* 수직으로 정렬하는데 줄바꿈안한다. */  
+            /* flex-flow:row nowrap; 수평으로 정렬하는 줄바꿈안한다. */
+            flex-flow:row wrap;
+            align-content:center; /* 두줄 이상이니까 item아니고 content */
+        }
+        .b {
+            width:100px; height:300px;
+            display:flex;
+            flex-flow:row nowrap;
+            justify-content:space-around;
+            /* align-content:space-between; */
+            align-items:flex-end;
+        }
+        .b li:last-child {align-self:flex-start;}
+        .b li:nth-child(2) {align-self:center;}
+        .c {
+            display:flex; /* 필수속성 먼저 써야 다른 속성들도 적용가능 */
+            width:500px; padding:20px;
+            
+        }
+        .c li {flex:1;} /* 모든 li의 비율이 1:1:1 로 만들어라 */
+        .c li:nth-child(1) {order:2; flex:2;} /* 비율을 다르게 주고 싶을때 개별선택자에 넣으면됨 */
+        .c li:nth-child(2) {order:3;}
+        .c li:nth-child(3) {order:1;}
+        .d {
+            width:300px; height:300px;
+            display:flex;
+            flex-flow:row nowrap; /* 기본요소값 row nowrap */
+            justify-content:space-between; /* 메인축정렬 */
+            align-items:center; /* 교차축 한줄일때 정렬 */
+        }
+        .d li:first-child {align-self:flex-start;}
+    </style>
+</head>
+<body>
+    <ul class="box a">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+    <hr>
+    <ul class="box b">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <hr>
+    <ul class="box c">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <ul class="box d">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>

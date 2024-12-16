@@ -1,31 +1,41 @@
 main {}
 main a {}
 main a img {margin-top:21px; margin-left:80px;}
-main .simple_join {background-color:skyblue;
+main .simple_join {
      margin:76px auto 0; text-align:center;
-    width:360px; padding-bottom:30px;
+    width:360px; padding-bottom:30px; margin-bottom:22px;
+    border-bottom:1px solid #ededed;
 } 
 main .simple_join h1 {
     text-align:left;
     font-size:1.25rem; font-weight:600;
 }
 main .simple_join p {
-    text-align:center; margin:14px 0;
+    text-align:center; margin-top:14px;
     font-size:0.88rem; color:#777;
 }
-main .simple_join .link_img {overflow:hidden;}
-main .simple_join .link_img a {}
-main .simple_join .link_img a img {float:left;}
+main .simple_join .link_img {
+    overflow:hidden; 
+}
+main .simple_join .link_img a {
+    float:left; width:40px; margin-right:20px;
+}
+main .simple_join .link_img a:last-child {margin-right:0;}
+main .simple_join .link_img a img {}
 /* ============간편로그인 부분 끝============= */
-main #joinFrm { width:360px; margin:0 auto;}
-main #joinFrm .email_input {background-color:pink; overflow:hidden;}
+main #joinFrm {width:360px; margin:0 auto;}
+main #joinFrm .email_input {}
 main #joinFrm .email_input dt {font-size:1.06rem; font-weight:500; margin-bottom:10px}
-main #joinFrm .email_input dd {width:170px; margin:10px 0; float:left;}
+main #joinFrm .email_input dd {}
+main #joinFrm .email_input dd:nth-child(1) {float:left;}
+main #joinFrm .email_input dd:nth-child(2) {
+    float:left; 
+}
+main #joinFrm .email_input dd:nth-child(3) {float:left;}
 main #joinFrm .email_input dd input {
-    width:170px; padding:10px; float:left;
+    width:170px; padding:10px;
     border:1px solid #ddd; border-radius:3px;
 }
-main #joinFrm .email_input dd:nth-child(2) {margin:0 2px;}
 main #joinFrm .email_input dd input::placeholder {color:#bbb;}
 main #joinFrm .email_input dd select {
     padding:10px; width:170px;
@@ -36,7 +46,7 @@ main #joinFrm .email_input dd select {
 main #joinFrm .email_input dd select option {}
 main #joinFrm .email_input dd .email_btn {
     background-color:#f5f5f5; color:#777;
-    font-weight:600; width:360px; padding:10px;
+    font-weight:600; width:360px; padding:10px; margin-top:10px;
     border:1px solid #ddd; border-radius:3px;
 }
 /* ===========이메일 부분 끝========================== */
@@ -73,35 +83,73 @@ main #joinFrm .all_agree_box .law_one {
     border-bottom:1px solid #eee; padding-bottom:5px; margin-bottom:10px;
 }
 main #joinFrm .all_agree_box .law_one #agree_all {}
-main #joinFrm .all_agree_box .law_one label {}
+main #joinFrm .all_agree_box .law_one #agree_all:checked+label {
+    background-image:url(../images/check_box_y.png);
+}
+main #joinFrm .all_agree_box .law_one label {
+    font-weight:600;
+    background-image:url(../images/check_box_n.png);
+    background-repeat:no-repeat; background-position:left center; padding-left:34px;
+}
 main #joinFrm .all_agree_box .law_one label span {color:#777;}
 /* =======================1============================== */
 main #joinFrm .all_agree_box .law_two {}
 main #joinFrm .all_agree_box .law_two #agree_age {}
-main #joinFrm .all_agree_box .law_two label {}
+main #joinFrm .all_agree_box .law_two #agree_age:checked+label {
+    background-image:url(../images/check_box_y.png);
+}
+main #joinFrm .all_agree_box .law_two label {
+    background-image:url(../images/check_box_n.png);
+    background-repeat:no-repeat; background-position:left center; padding-left:34px;
+}
 main #joinFrm .all_agree_box .law_two label em {color:#3292FF}
 /* =======================2================================ */
-main #joinFrm .all_agree_box .law_three {margin:10px 0;}
-main #joinFrm .all_agree_box .lawthree #agree_terms {}
-main #joinFrm .all_agree_box .law_three label {}
+main #joinFrm .all_agree_box .law_three {}
+main #joinFrm .all_agree_box .law_three #agree_terms {}
+main #joinFrm .all_agree_box .law_three #agree_terms:checked+label {
+    background-image:url(../images/check_box_y.png);
+}
+main #joinFrm .all_agree_box .law_three label {
+    background-image:url(../images/check_box_n.png);
+    background-repeat:no-repeat; background-position:left center; padding-left:34px;
+}
 main #joinFrm .all_agree_box .law_three label em {color:#3292FF}
 main #joinFrm .all_agree_box .lawthree label em a {}
 main #joinFrm .all_agree_box .law_three label em img {}
 /* =======================3================================ */
 main #joinFrm .all_agree_box .law_four {}
-main #joinFrm .all_agree_box .law_four p {}
-main #joinFrm .all_agree_box .law_four p em {color:#3292FF}
+main #joinFrm .all_agree_box .law_four #agree_collection {}
+main #joinFrm .all_agree_box .law_four #agree_collection:checked+label {
+    background-image:url(../images/check_box_y.png);
+}
+main #joinFrm .all_agree_box .law_four label {
+    background-image:url(../images/check_box_n.png);
+    background-repeat:no-repeat; background-position:left center; padding-left:34px;
+}
+main #joinFrm .all_agree_box .law_four label em {color:#3292FF}
 /* ======================4==================================== */
-main #joinFrm .all_agree_box .law_five {margin:10px 0;}
+main #joinFrm .all_agree_box .law_five {margin-bottom:10px;}
 main #joinFrm .all_agree_box .law_five #agree_maketing {}
-main #joinFrm .all_agree_box .law_five label {}
-main #joinFrm .all_agree_box .law_five label span {color:#777}
+main #joinFrm .all_agree_box .law_five #agree_maketing:checked+label {
+    background-image:url(../images/check_box_y.png);
+}
+main #joinFrm .all_agree_box .law_five label {
+    background-image:url(../images/check_box_n.png);
+    background-repeat:no-repeat; background-position:left center; padding-left:34px;
+}
+main #joinFrm .all_agree_box .law_five label span {color:#777 font-size:0.88rem;}
 main #joinFrm .all_agree_box .law_five a {}
 main #joinFrm .all_agree_box .law_five a img {}
 /* =========================5============================== */
 main #joinFrm .all_agree_box .law_six {}
 main #joinFrm .all_agree_box .law_six #agree_sms {}
-main #joinFrm .all_agree_box .law_six label {}
+main #joinFrm .all_agree_box .law_six #agree_sms:checked+label {
+    background-image:url(../images/check_box_y.png);
+}
+main #joinFrm .all_agree_box .law_six label {
+    background-image:url(../images/check_box_n.png);
+    background-repeat:no-repeat; background-position:left center; padding-left:34px;
+}
 main #joinFrm .all_agree_box .law_six label span {color:#777}
 /* =========================체크박스 끝======================== */
 main #joinFrm .btn {

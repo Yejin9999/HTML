@@ -12,6 +12,10 @@
     color:#fff; font-size:4.38rem;
     text-align:center; line-height:1.3; letter-spacing:-0.02rem;
 }
+#wrap .container h2 {
+    font-size:3.44rem; font-weight:500; 
+    letter-spacing:-0.01rem; line-height:1.2; color:#fff;
+ }
 #wrap .container .main_title span {font-weight:700; font-size:4.38rem;}
 #wrap .container .sponsor_btn {
     background:linear-gradient(90deg,#FE9300,#FF7300);
@@ -31,7 +35,7 @@
     display:flex; flex-flow:row nowrap;
     align-items:center;
 }
-#wrap .container .sponsor_q_btn:hover {background-color:#FE9300;}
+#wrap .container .sponsor_q_btn:hover {box-shadow:0 0 5px rgba(255,255,255,0.3); }
 #wrap .container .sponsor_q_btn img {width:24px;}
 #wrap .container .sponsor_q_btn img:first-child{margin-right:10px;}
 #wrap .container .sponsor_q_btn img:last-child{margin-left:10px}
@@ -81,46 +85,156 @@
     justify-content:space-between; 
 }
 #wrap .bg2 .contents .quiz_contents {
-    background-color:brown;
 }
 #wrap .bg2 .contents .quiz_contents h2 {
-    font-size:3.44rem; font-weight:500; color:#fff;
-    text-align:center; margin-bottom:38px;
+    margin:0 0 38px 206px;
 }
 #wrap .bg2 .contents .quiz_contents p {
-    font-size:1.25rem; line-height:1.7; color:#fff;
+    font-size:1.25rem; line-height:1.7; color:#fff; margin-bottom:8px;
 }
-#wrap .bg2 .contents .quiz_contents form {}
-#wrap .bg2 .contents .quiz_contents form label {}
+#wrap .bg2 .contents .quiz_contents form {
+    display:flex; flex-flow:column nowrap;
+}
+#wrap .bg2 .contents .quiz_contents form label {
+    height:34px; margin-bottom:14px; 
+    display:flex; flex-flow:row nowrap; align-items:center;
+}
 #wrap .bg2 .contents .quiz_contents form label input[name^=quiz] {
 }
 #wrap .bg2 .contents .quiz_contents form label input[name^=quiz]+span {
     background-image:url(../images/퀴즈체크해제.png);
+    /* background-image외 repeat,position,size 등 속성은 비활성화쪽에 작성 */
     background-repeat:no-repeat;
+    background-position-y:4px;
     font-size:1.25rem; line-height:1.7; color:#fff;
-    display:block; 
+    /* 이미지와 안겹치게 하는 속성 */ padding-left:48px; height:100%;
+    
 }
-#wrap .bg2 .contents .quiz_contents form label input[name^=quiz]:checked+span {
+#wrap .bg2 .contents .quiz_contents form label input[name^=quiz]:checked+span { /* 활성화됐을떄 */
     background-image:url(../images/퀴즈체크.png);
-    background-repeat:no-repeat;
 }
 #wrap .bg2 .contents .quiz_contents form .answer_btn {
     width:450px; padding:10px 0; border-radius:50px;
     color:#fff; background-color:#050505;
+    font-size:1.25rem; line-height:1.7;
     margin-top:15px;
 }
+#wrap .bg2 .contents .quiz_contents form .answer_btn:hover {
+    box-shadow:0 0 5px rgba(255,255,255,0.3); 
+}
 #wrap .bg2 .contents .quiz_status {
-    background-color:purple; width:500px;
+    width:500px; margin:57px 0;
 }
 #wrap .bg2 .contents .quiz_status img {width:500px;}
 #wrap .bg2 .contents .quiz_status span {
-    display:block; font-size:1.25rem; float:right;
+    display:block; font-size:1.25rem; line-height:1.7; text-align:right;
      color:#fff; margin-top:20px;
 }
 /* ==============================3행 동영상 */
+#wrap .bg3 {
+    background-image:url(../images/video_bg.png);
+    padding:200px 0;
+}
+#wrap .bg3 .contents {
+    display:flex; flex-flow:column nowrap; align-items:center;
+
+}
+#wrap .bg3 .contents h2 { 
+    color:#000; text-align:center;
+}
+#wrap .bg3 .contents iframe {
+    max-width:900px; width:100%;
+    margin:70px 0;
+}
+#wrap .bg3 .contents .sponsor_btn {}
 /* ==============================4행 빙하50%감소 */
-/* ==============================5행 빙하 인류재앙3 */
 /* ==============================6행 지구전체위기 */
+#wrap .bg4,
+#wrap .bg6 {
+    background-image:url(../images/50_bg.png);
+    padding:200px 0;
+}
+#wrap .bg4 .contents,
+#wrap .bg6 .contents {}
+#wrap .bg4 .contents h2,
+#wrap .bg6 .contents h2 {
+    font-weight:500; font-size:3.44rem;  
+    line-height:1.2; letter-spacing:-0.01rem;
+}
+#wrap .bg4 .contents h2 span,
+#wrap .bg6 .contents h2 span {
+    font-weight:500; font-size:3.44rem;  
+    line-height:1.2; letter-spacing:-0.01rem; 
+    color:#050505; background-color:#fff;
+    display:inline-block; padding-bottom:5px;
+}
+#wrap .bg4 .contents h2+p,
+#wrap .bg6 .contents h2+p {
+    font-weight:700; font-size:2.13rem;  line-height:1.2;
+    color:#fff;
+}
+#wrap .bg4 .contents .img,
+#wrap .bg6 .contents .img {}
+#wrap .bg4 .contents .img img,
+#wrap .bg6 .contents .img img {width:100%;}
+/* 개별 */
+#wrap .bg4 .contents h2+p {margin:81px 0;}
+#wrap .bg6 .contents h2+p {margin:58px 0;}
+/* ====================================== */
+/* ==============================5행 빙하 인류재앙3 */
+#wrap .bg5 {
+    background-color:#f5f5f5;
+    padding:200px 0;
+}
+#wrap .bg5 .contents {text-align:center;}
+#wrap .bg5 .contents h2 {color:#000;  margin-bottom:11px;}
+#wrap .bg5 .contents > p {
+    font-size:1.25rem; line-height:1.7;
+    margin:55px 0; 
+}
+#wrap .bg5 .contents ul {
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+}
+#wrap .bg5 .contents ul li {
+    flex:1; width:calc((100% - (20px *2)) / 3); 
+}
+#wrap .bg5 .contents ul li:nth-child(2) {margin:0 20px;}
+#wrap .bg5 .contents ul li .title {
+    position:relative; height:320px;
+    background-size:cover;
+    background-position:center 60%;
+}
+#wrap .bg5 .contents ul li:nth-child(1) .title {
+    background-image:url(../images/28.png);
+}
+#wrap .bg5 .contents ul li:nth-child(2) .title {
+    background-image:url(../images/27.png);
+}
+#wrap .bg5 .contents ul li:nth-child(3) .title {
+    background-image: url(../images/wwf.jpg);
+    background-size:cover;
+}
+#wrap .bg5 .contents ul li .title::after {
+    content:''; display:block; position:absolute; left:0; top:0; width:100%; height:100%;
+    background:linear-gradient(360deg, transparent,rgba(0, 0, 0, 0.8) 80%);
+    z-index:300; 
+    /* z-index는 형제끼리 쓸 수 있고 position속성이 포함되어 있어야하며
+    위로 올라오고 싶은 것을 값을 더 크게 적기 */
+}
+#wrap .bg5 .contents ul li .title h3 {
+    font-weight:700; font-size:2.69rem; line-height:1.2; color:#fff;
+    z-index:400; position:relative; padding-top:48px;
+}
+#wrap .bg5 .contents ul li .title p {
+    font-size:1.25rem; line-height:1.7; color:#fff;
+    z-index:400; position:relative;
+}
+#wrap .bg5 .contents ul li .content {
+    background-color:#fff;
+    height:250px; font-size:1.25rem; line-height:1.7;
+    padding:20px;
+}
 /* ==============================7행 WWF소개 */
 /* ==============================8행 다양한활동 */
 /* ==============================9행 감사선물 */

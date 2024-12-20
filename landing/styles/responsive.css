@@ -3,9 +3,9 @@
     /* ================================공통선택자+1행 반응형디자인(tablet) */
     #wrap .container > * {padding:0 80px;}
     #wrap .container .main_title {font-size:3.13rem;}
+    #wrap .container h2 {font-size:2.5rem;}
     #wrap .bg1 .gradient .contents .main_title span {font-size:3.13rem;}
     #wrap .container .sponsor_btn {
-        font-size:1.38rem; width:270px; padding:15px 0;
         display:flex; align-items:center; justify-content:center;
     }
     #wrap .container .sponsor_q_btn{
@@ -14,40 +14,109 @@
     }
     #wrap .container .sponsor_q_btn img:first-child {display:none;}
     #wrap .container .sponsor_q_btn img:last-child {width:22px;}
-    /* ==========================================2행 반응형디자인(tablet) */
+    /* ==========================================2행 반응형디자인(tablet-900) */
+    #wrap .bg2 .contents .quiz_contents h2 {
+        font-size:2.50rem;
+        margin:0 0 56px 206px;
+    }
+    #wrap .bg2 .contents .quiz_status {
+        text-align:right;
+    }
+    #wrap .bg2 .contents .quiz_status img {width:348px;}
     /* ==========================================3행 반응형디자인(tablet) */
+    #wrap .bg3 .contents h2 {font-size:2.5rem;}
     /* ==========================================4행 반응형디자인(tablet) */
-    /* ==========================================5행 반응형디자인(tablet) */
     /* ==========================================6행 반응형디자인(tablet) */
+    #wrap .bg4 .contents h2,
+    #wrap .bg6 .contents h2 {font-size:2.5rem;}
+    #wrap .bg4 .contents h2 span,
+    #wrap .bg6 .contents h2 span {font-size:2.5rem;}
+    #wrap .bg4 .contents h2+p,
+    #wrap .bg6 .contents h2+p {font-size:1.38rem; margin:40px 0;}
+    /* ==========================================5행 반응형디자인(tablet) */
+    #wrap .bg5 .contents h2 {font-size:2.5rem}
+    #wrap .bg5 .contents > p {font-size:1.0rem;}
+    #wrap .bg5 .contents ul li .title h3 {font-size:1.88rem;}
+    #wrap .bg5 .contents ul li .title p {font-size:1.0rem;}
+    #wrap .bg5 .contents ul li .content {font-size:1.0rem;}
     /* ==========================================7행 반응형디자인(tablet) */
     /* ==========================================8행 반응형디자인(tablet) */
     /* ==========================================9행 반응형디자인(tablet) */
     /* ==========================================10행 반응형디자인(tablet) */
 } /* 1250 end */
+/* ==========================================2행 반응형디자인(769-900) */
+@media screen and (max-width:900px) {
+    #wrap .bg2 .contents {
+        flex-flow:column nowrap;
+        align-items:center;
+    }
+    #wrap .bg2 .contents .quiz_contents {margin-bottom:50px;}
+}
+/* ==========================================3행 반응형디자인(769-900) */
+/* 769-900 end */
 @media screen and (max-width:768px) {
     /* ================================공통선택자+1행 반응형디자인(mobile) */
     #wrap .container > * {padding:15px;}
+    #wrap .container h2 {font-size:1.56rem;}
     #wrap .bg1 .gradient .contents h1:nth-child(1) {width:40px;}
     #wrap .container .main_title {font-size:1.88rem;}
     #wrap .bg1 .gradient .contents .main_title span {font-size:1.88rem;}
     #wrap .bg1 .gradient .contents > * {margin-bottom:50px;}
     #wrap .container .sponsor_btn {
-        width:230px; font-size:1.38rem;
+        width:220px; padding:15px 0; font-size:1.13rem;
     }
     #wrap .container .sponsor_btn img {
         width:20px; 
     }
     #wrap .container .sponsor_q_btn {
-        font-size:0.94rem; width:250px;
+        font-size:0.94rem; width:250px; padding:10px;
     }
     #wrap .container .sponsor_q_btn img:last-child {width:15px;}
     /* ==========================================2행 반응형디자인(mobile) */
+    #wrap .bg2 .contents {
+        display:flex; flex-flow:column nowrap;
+        padding:0 20px;
+    }
+    #wrap .bg2 .contents .quiz_contents h2 {font-size:1.56rem; margin-left:0;}
+    #wrap .bg2 .contents .quiz_contents p {font-size:0.81rem;}
+    #wrap .bg2 .contents .quiz_contents form label input[name^=quiz]+span {
+        font-size:0.81rem;
+    }
+    #wrap .bg2 .contents .quiz_contents form .answer_btn {
+        width:200px; font-size:0.94rem;  line-height:1.2;
+    }
+    #wrap .bg2 .contents .quiz_status {width:300px; padding-left:50px;}
+    #wrap .bg2 .contents .quiz_status img {width:250px;}
+    #wrap .bg2 .contents .quiz_status span {font-size:0.81rem; text-align:center;}
     /* ==========================================3행 반응형디자인(mobile) */
+    #wrap .bg3 {padding:100px 0;}
+    #wrap .bg3 .contents h2 {font-size:1.56rem;}
+    #wrap .bg3 .contents iframe {height:300px;}
     /* ==========================================4행 반응형디자인(mobile) */
-    /* ==========================================5행 반응형디자인(mobile) */
     /* ==========================================6행 반응형디자인(mobile) */
+    #wrap .bg4,
+    #wrap .bg6 {padding:100px 0;}
+    #wrap .bg4 .contents h2,
+    #wrap .bg6 .contents h2 {font-size:1.56rem;}
+    #wrap .bg4 .contents h2 span,
+    #wrap .bg6 .contents h2 span {font-size:1.56rem;}
+    #wrap .bg4 .contents h2+p,
+    #wrap .bg6 .contents h2+p {font-size:0.94rem;}
+    #wrap .bg4 .contents .img img,
+    #wrap .bg6 .contents .img img {height:400px;}
+    /* ==========================================5행 반응형디자인(mobile) */
+    #wrap .bg5 {padding:100px 0;}
+    #wrap .bg5 .contents h2 {font-size:1.56rem;}
+    #wrap .bg5 .contents > p {font-size:0.81rem;}
+    #wrap .bg5 .contents ul {flex-flow:column nowrap;}
+    #wrap .bg5 .contents ul li {width:100%;}
+    #wrap .bg5 .contents ul li:nth-child(2) {margin:0 30px;}
+    #wrap .bg5 .contents ul li .title {height:250px;}
+    #wrap .bg5 .contents ul li .title h3 {font-size:1.13rem;}
+    #wrap .bg5 .contents ul li .title p {font-size:0.81rem;}
+    #wrap .bg5 .contents ul li .content {height:106px; font-size:0.81rem;}
     /* ==========================================7행 반응형디자인(mobile) */
     /* ==========================================8행 반응형디자인(mobile) */
     /* ==========================================9행 반응형디자인(mobile) */
     /* ==========================================10행 반응형디자인(mobile) */
-} /* 768 end */
+} /* 320-768 end */

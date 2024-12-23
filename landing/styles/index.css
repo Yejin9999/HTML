@@ -3,10 +3,11 @@
 #wrap .container {
     background-size:cover;
     background-position:center;
+    
 }
 #wrap .container .contents {
     max-width:1250px; min-width:320px;
-    margin:0 auto;
+    margin:0 auto; 
 }
 #wrap .container .main_title { /* 대제목 70스타일 */
     color:#fff; font-size:4.38rem;
@@ -14,7 +15,7 @@
 }
 #wrap .container h2 {
     font-size:3.44rem; font-weight:500; 
-    letter-spacing:-0.01rem; line-height:1.2; color:#fff;
+    letter-spacing:-0.01rem; line-height:1.2; color:#000;
  }
 #wrap .container .main_title span {font-weight:700; font-size:4.38rem;}
 #wrap .container .sponsor_btn {
@@ -22,9 +23,8 @@
     color:#fff; border-radius:50px; padding:15px 70px;  
     font-size:2.13rem; line-height:1.2; font-weight:700;
 }
-#wrap .container .sponsor_btn:hover { /* 마우스올렸을때 변하는 (활성화) 상태선택자 */
-    background:linear-gradient(-90deg,#FE9300,#FF7300);
-}
+/* 마우스올렸을때 변하는 (활성화) 상태선택자 */
+#wrap .container .sponsor_btn:hover { background:linear-gradient(-90deg,#FE9300,#FF7300);}
 #wrap .container .sponsor_btn img {
     width:32px; position:relative; top:3px;
 }
@@ -87,7 +87,7 @@
 #wrap .bg2 .contents .quiz_contents {
 }
 #wrap .bg2 .contents .quiz_contents h2 {
-    margin:0 0 38px 206px;
+    margin:0 0 38px 206px; color:#fff;
 }
 #wrap .bg2 .contents .quiz_contents p {
     font-size:1.25rem; line-height:1.7; color:#fff; margin-bottom:8px;
@@ -159,7 +159,7 @@
 #wrap .bg4 .contents h2,
 #wrap .bg6 .contents h2 {
     font-weight:500; font-size:3.44rem;  
-    line-height:1.2; letter-spacing:-0.01rem;
+    line-height:1.2; letter-spacing:-0.01rem; color:#fff;
 }
 #wrap .bg4 .contents h2 span,
 #wrap .bg6 .contents h2 span {
@@ -187,7 +187,7 @@
     padding:200px 0;
 }
 #wrap .bg5 .contents {text-align:center;}
-#wrap .bg5 .contents h2 {color:#000;  margin-bottom:11px;}
+#wrap .bg5 .contents h2 {margin-bottom:11px;}
 #wrap .bg5 .contents > p {
     font-size:1.25rem; line-height:1.7;
     margin:55px 0; 
@@ -197,13 +197,12 @@
     justify-content:space-between;
 }
 #wrap .bg5 .contents ul li {
-    flex:1; width:calc((100% - (20px *2)) / 3); 
+    width:calc((100% - (20px * 2)) / 3); 
 }
-#wrap .bg5 .contents ul li:nth-child(2) {margin:0 20px;}
 #wrap .bg5 .contents ul li .title {
     position:relative; height:320px;
     background-size:cover;
-    background-position:center 60%;
+    background-position:center 60%; /* background-image 들어갔을땐 size position 은 거의 필수 */
 }
 #wrap .bg5 .contents ul li:nth-child(1) .title {
     background-image:url(../images/28.png);
@@ -236,6 +235,128 @@
     padding:20px;
 }
 /* ==============================7행 WWF소개 */
+#wrap .bg7 {
+    background-image:url(../images/wwf.jpg);
+    background-size:cover;
+    background-position:center;
+    padding:200px 0;
+    position:relative;
+}
+#wrap .bg7::after {
+    content:''; display:block; width:100%; height:100%; /* 부모랑 크기가 똑같아지라고 */ 
+    position:absolute; /* 컨텐츠랑 겹쳐지라고 */ left:0; top:0; 
+    z-index:10; /* 단위쓰면 안되고 숫자는 크기차이만 나게 아무숫자나 가능 (형제와써야함) */
+    background-color:rgba(255,255,255,0.8);
+}
+#wrap .bg7 .contents {position:relative; z-index:20;}
+#wrap .bg7 .contents .main_title {color:#000;}
+#wrap .bg7 .contents p {
+    font-size:2.13rem;  line-height:1.2; 
+    margin:80px 0; text-align:center;
+}
+#wrap .bg7 .contents p:last-child {margin-bottom:0px;}
 /* ==============================8행 다양한활동 */
+#wrap .bg8 {
+    background-color: #f5f5f5;
+}
+#wrap .bg8 .contents {
+    padding-top:200px;
+    padding-bottom:200px;
+}
+#wrap .bg8 .contents h2 {text-align:center; margin-bottom:83px;}
+#wrap .bg8 .contents .activity {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+#wrap .bg8 .contents .activity li {
+    width:calc((100% - 40px) / 2); /* 여백마진 따로 주지않고 위치조정하는법 */
+}
+#wrap .bg8 .contents .activity li:last-child,
+#wrap .bg8 .contents .activity li .list1,
+#wrap .bg8 .contents .activity li .list2 {
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+/* 배경 공통 선택자 */
+#wrap .bg8 .contents .activity li:last-child {
+    background-image:url(../images/50.png);
+}
+#wrap .bg8 .contents .activity li .list1 {
+    background-image:url(../images/28.png); height:300px;
+    margin-bottom:22px;
+    background-position-y:40%;
+}
+#wrap .bg8 .contents .activity li .list2 {
+    background-image:url(../images/wwf.jpg); height:300px;
+}
+#wrap .bg8 .contents .activity li .list1 .text,
+#wrap .bg8 .contents .activity li .list2 .text {}
+#wrap .bg8 .contents .activity li .list1 .text h3,
+#wrap .bg8 .contents .activity li .list2 .text h3 {}
+#wrap .bg8 .contents .activity li .list1 .text p,
+#wrap .bg8 .contents .activity li .list2 .text p {}
+/* 8행 li 공통 text 선택자 */
+#wrap .bg8 .contents .activity li .text {
+    background-color:rgba(5,5,5,0.5); /* #050505 */
+    color:#fff;
+    display:inline-block;/* block은 크기를 인식하고 inline은 내용만큼만 인식해라 */
+    width:60%; /* 텍스트 크기에 따라 옆으로 점점 늘어나는 문제를 해결하기 위함 (%는 부모크기를 인식) */
+    position:absolute; left:0; bottom:30px;
+    padding:20px;
+}
+#wrap .bg8 .contents .activity li .text h3 {font-weight:700; font-size:2.13rem;  line-height:1.2; }
+#wrap .bg8 .contents .activity li .text p {
+    font-size:1.25rem; line-height:1.7; 
+    margin-top:18px;
+}
 /* ==============================9행 감사선물 */
+#wrap .bg9 {
+    background-image:url(../images/50_bg.png);
+    background-size:cover;
+    background-position:center;
+    padding:200px 0;
+}
+#wrap .bg9 .contents {}
+#wrap .bg9 .contents .title {
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:flex-end;
+}
+#wrap .bg9 .contents .title h2 {color:#fff;}
+#wrap .bg9 .contents .title .sponsor_btn {}
+#wrap .bg9 .contents .present_list {
+    margin:69px 0; 
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    
+}
+#wrap .bg9 .contents .present_list li {
+    width:calc((100% - (45px * 2)) / 3); 
+}
+/* #wrap .bg9 .contents .present_list li:nth-child(1) {background-image:url(../images/freebie2.jpg);}
+#wrap .bg9 .contents .present_list li:nth-child(2) {background-image:url(../images/freebie1.jpg);}
+#wrap .bg9 .contents .present_list li:nth-child(3) {background-image:url(../images/freebie3.jpg);} */
+#wrap .bg9 .contents .present_list li .text {
+    margin-top:13px;
+}
+#wrap .bg9 .contents .present_list li::before {
+content:''; display:block; width:100%; height:300px; 
+background-size:cover; background-position:center;
+}
+#wrap .bg9 .contents .present_list li:first-child::before {background-image:url(../images/freebie2.jpg);}
+#wrap .bg9 .contents .present_list li:nth-child(2)::before {background-image:url(../images/freebie1.jpg);}
+#wrap .bg9 .contents .present_list li:last-child::before {background-image:url(../images/freebie3.jpg);}
+#wrap .bg9 .contents .present_list li .text p {
+    color:#fff; font-size:1.25rem; line-height:1.7;  text-align:center;
+}
+#wrap .bg9 .contents .present_list li .text p:last-child {}
+#wrap .bg9 .contents .benefit {
+    background-color:#fff;  font-size:1.25rem; line-height:1.7;
+    display:inline-block;
+    float:right;
+}
 /* ==============================10행 안내사항 */
+#wrap .bg10 {background-color:#e4e5ea; padding:100px 0;}
+#wrap .bg10 .contents {}
+#wrap .bg10 .contents h3 {font-weight:700; font-size:2.13rem;  line-height:1.2;}
+#wrap .bg10 .contents ul {}
+#wrap .bg10 .contents ul li {font-size:1.25rem; line-height:1.7;}

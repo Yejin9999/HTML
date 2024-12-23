@@ -17,7 +17,7 @@ font-size:1.25rem; line-height:1.7;
 ### 내용강조 34 (d)
 font-weight:700; font-size:2.13rem;  line-height:1.2;
 ### 내용강조34 regular (d)
-font-size:2.13rem;  line-height:1.2;
+font-size:2.13rem;  line-height:1.5;
 ========================================태블릿================================================================
 ### 대제목 50 (t)
 font-size:3.13rem; font-weight:700; line-height:1.3; letter-spacing:-0.02rem;

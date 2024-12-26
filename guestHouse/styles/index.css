@@ -1,0 +1,172 @@
+header {}
+header .top {
+    background-color:#f5f5f5;
+    height:90px; padding:0 80px;
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+header .top h1 {}
+header .top h1 a {}
+header .top h1 a img {height:90px;}
+header .top .tab_menu {
+    overflow:hidden;
+}
+header .top .tab_menu li {
+    float:left; width:120px;
+    padding:32px 0; 
+}
+header .top .tab_menu li a {font-size:1.25rem; font-weight:600; letter-spacing:-0.02rem;}
+header .title_bnr {
+    background-image: url(../images/main_bnr.jpg);
+    background-size:cover;
+    background-position:center;
+    height:619px; text-align:center;
+}
+header .title_bnr h1,
+header .title_bnr p {position:relative; top:450px;}
+header .title_bnr h1 {
+    font-size:2.19rem; font-weight:700; line-height:1.5; letter-spacing:-0.02rem; color:#fff;
+}
+header .title_bnr p {color:rgba(255,255,255,0.5); margin-top:14px;}
+/* ========================================헤더 끝 */
+main {
+    width:1260px; margin:0 auto;
+}
+main .room_introduction {
+}
+main .room_introduction .room_title {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    padding-top:81px; 
+}
+main .room_introduction .room_title h2 {
+    font-size:2.00rem; font-weight:500; letter-spacing:-0.02rem; line-height:1.5; 
+}
+main .room_introduction .room_title h2 span {
+    font-size:1.5rem; 
+}
+main .room_introduction .room_title h2 em {
+    font-size:2.00rem; font-weight:700; color:#D38563;
+}
+main .room_introduction .room_title a {
+    margin-top:55px;
+    font-size:1.13rem; font-weight:500; letter-spacing:-0.02rem; line-height:1.5; 
+}
+main .room_introduction .room_title a img {margin:0 7px 0 10px;}
+main .room_introduction .room_img {
+    margin-bottom:30px; margin-top:73px; padding-bottom:48px;
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+main .room_introduction .room_img li {width:407px;}
+main .room_introduction .room_img li .content_one {}
+main .room_introduction .room_img li .content_two {}
+main .room_introduction .room_img li .content_three {}
+/* 공통 */
+main .room_introduction .room_img li .content_one img, 
+main .room_introduction .room_img li .content_two img,
+main .room_introduction .room_img li .content_three img {margin-bottom:20px;}
+/* ======= */
+main .room_introduction .room_img li .content_one p,
+main .room_introduction .room_img li .content_two p,
+main .room_introduction .room_img li .content_three p {
+    font-size:1.0rem; font-weight:400; letter-spacing:-0.02rem; line-height:1.5; 
+}
+/* =========================================================객실정보더보기 끝 */
+main .nearbyspot_introduction {}
+main .nearbyspot_introduction .tourism_title {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    padding-top:81px; 
+}
+main .nearbyspot_introduction .tourism_title h2 {
+    font-size:2.00rem; font-weight:500; letter-spacing:-0.02rem; line-height:1.5; 
+}
+main .nearbyspot_introduction .tourism_title h2 span {
+    font-size:1.5rem;
+}
+main .nearbyspot_introduction .tourism_title h2 em {
+    font-size:2.00rem; font-weight:700; color:#518C55;
+}
+main .nearbyspot_introduction .tourism_title a {
+    margin-top:55px;
+    font-size:1.13rem; font-weight:500; letter-spacing:-0.02rem; line-height:1.5; 
+}
+main .nearbyspot_introduction .tourism_title a img {
+    margin:0 7px 0 10px;
+}
+main .nearbyspot_introduction .spot_img {
+    margin-bottom:30px; margin-top:73px; padding-bottom:48px;
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+main .nearbyspot_introduction .spot_img li {width:407px;}
+main .nearbyspot_introduction .spot_img .content_one {}
+main .nearbyspot_introduction .spot_img .content_two {}
+main .nearbyspot_introduction .spot_img .content_three {}
+/* 공통 */
+main .nearbyspot_introduction .spot_img .content_one img,
+main .nearbyspot_introduction .spot_img .content_two img,
+main .nearbyspot_introduction .spot_img .content_three img {margin-bottom:20px;}
+
+main .nearbyspot_introduction .spot_img .content_one p,
+main .nearbyspot_introduction .spot_img .content_two p,
+main .nearbyspot_introduction .spot_img .content_three p {font-size:1.0rem; font-weight:400; letter-spacing:-0.02rem; line-height:1.5;}
+/*=========================================================== 주변관광지 더보기 끝 */
+main .map {padding-top:80px;}
+main .map h2 {font-size:1.5rem; font-weight:500; letter-spacing:-0.02rem; line-height:1.5;}
+main .map .distance_detail {
+    margin-top:60px;
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+main .map .distance_detail a {}
+main .map .distance_detail a img {width:750px; height:406px;}
+main .map .distance_detail .publictransport {}
+main .map .distance_detail .publictransport h3:first-child {margin-bottom:30px; color:#000;}
+main .map .distance_detail .publictransport h3 {
+    font-size:1.38rem; font-weight:500; letter-spacing:-0.02rem; line-height:1.5; 
+    color:#354292;}
+main .map .distance_detail .publictransport dl {margin-top:20px;}
+main .map .distance_detail .publictransport dl dt {
+    margin-bottom:10px; font-size:1.25rem; letter-spacing:-0.02rem;
+}
+main .map .distance_detail .publictransport dl dd {
+    margin-bottom:7px;
+    font-size:1.0rem; font-weight:400; letter-spacing:-0.02rem; line-height:1.5; 
+}
+/* ============================================================지도 끝 */
+footer {}
+footer .bottom_bnr {
+    height:440px; width:1920px;
+    margin:140px 0;
+    background-image:url(../images/footer_bnr.jpg);
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+}
+/* footer .bottom_bnr::after {
+    content:''; width:1920px; height:440px; display:block;
+    background-color:rgba(0,0,0,0.6);
+    position:relative; bottom:45px; z-index:100;
+}  */
+footer .bottom_bnr::after {
+    content:''; display:block; position:relative; top:-45px;
+    width:100%; height:440px;
+    background-color:rgba(0,0,0,0.6);
+}
+footer .bottom_bnr p {
+    color:#fff; font-size:1.88rem; letter-spacing:-0.02rem; line-height:1.5; z-index:200;
+    position:relative; top:198px;
+}
+/* =============================================================footer 주소 */
+footer .address_tap {
+    background-color:#f5f5f5;
+    padding:20px 80px;
+    font-size:1.0rem; font-weight:400; letter-spacing:-0.02rem; line-height:1.5; 
+}
+footer .address_tap p {margin-bottom:5px;}
+footer .address_tap address {
+    margin-bottom:5px; width:446px;
+}
+footer .address_tap .footer_tap {}
+footer .address_tap .footer_tap a {}
+footer .address_tap .footer_tap a::after {
+    content:''; display:inline-block;
+    width:0.5px; height:15px; background-color:#000;
+    margin:0 10px; position:relative; top:2px;
+}

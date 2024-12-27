@@ -1,0 +1,146 @@
+/* header 공통값 */
+.h_bg header * {color:#fff;}
+/* ===========================header */
+.h_bg {background-color:#111; position:relative;}
+.h_bg header {
+    width:1400px; height:125px; /* 헤더는 높이를 고정하는 경우가 많아서 그런경우에는 쓴다. */
+    margin:0 auto;
+    /* h1 h_right 정렬 */
+    display:flex; flex-flow:row nowrap; align-items:center;
+}
+.h_bg header h1 {} /* 너비는 부모를 따라가지만 높이는 자기자신의 내용을 따라간다. */
+.h_bg header h1 a {}
+.h_bg header h1 a img {}
+.h_bg header .h_right {
+    width:calc(100% - 150px); padding-left:20px;
+    /* 로고너비값뺴기*/
+}
+.h_bg header .h_right .h_top {
+    float:right;
+    display:flex; flex-flow:row nowrap; align-items:center;
+    margin-bottom:25px;
+}
+.h_bg header .h_right .h_top .search {}
+.h_bg header .h_right .h_top .search > a {}
+.h_bg header .h_right .h_top .search > a img {}
+.h_bg header .h_right .h_top > a {
+    margin-left:16px;
+    font-size:0.88rem; letter-spacing:-0.02rem;
+}
+/* ===========================header 검색팝업(S)*/
+.h_bg header .h_right .h_top .search .search_popup {
+    display:none; /* 초기 숨기기 (검색 아이콘 클릭 시에만 출력 대상) */
+    background-color:#111;
+    position:fixed;  right:0; top:0; /* 오른쪽 상단에 놓는다 *//* 좌표필수(원하는 방향에 가깝게) */
+    width:350px; height:100vh; /* 한화면 높이기준 (사용자가 보는 브라우저 높이와 같게하는것) */
+    padding:20px;
+}
+.h_bg header .h_right .h_top .search .search_popup > * {margin-bottom:50px;}
+.h_bg header .h_right .h_top .search .search_popup .close_btn {float:right;}
+.h_bg header .h_right .h_top .search .search_popup .close_btn img {}
+.h_bg header .h_right .h_top .search .search_popup #searchFrm {
+    clear:both;
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    border-bottom:2px solid #fff; padding-bottom:6px;
+}
+.h_bg header .h_right .h_top .search .search_popup #searchFrm input[name*=search] {
+    background:none; /* 하얀칸배경제거 */
+     width:calc(100% - 30px); /* 돋보기 크기만큼 뺀 값 */
+} /* 속성선택자*/ 
+.h_bg header .h_right .h_top .search .search_popup #searchFrm input[name*=search]::placeholder {
+    color:#aaa; letter-spacing:-0.02rem;
+}
+.h_bg header .h_right .h_top .search .search_popup #searchFrm #search_btn {}
+.h_bg header .h_right .h_top .search .search_popup #searchFrm #search_btn img {}
+.h_bg header .h_right .h_top .search .search_popup h2 {
+    font-size:1.13rem; letter-spacing:-0.02rem; font-weight:500;
+}
+.h_bg header .h_right .h_top .search .search_popup .search_list {
+    display:flex; flex-flow:column nowrap; 
+}
+.h_bg header .h_right .h_top .search .search_popup .search_list li {margin-bottom:14px;}
+.h_bg header .h_right .h_top .search .search_popup .search_list li:last-child {margin:0;}
+.h_bg header .h_right .h_top .search .search_popup .search_list li .num {margin-right:20px;}
+.h_bg header .h_right .h_top .search .search_popup .search_list li .keywords {
+    font-size:0.94rem; letter-spacing: -0.02rem;
+}
+.h_bg header .h_right .h_top .search .search_popup .search_list li .rating {float:right;}
+.h_bg header .h_right .h_top .search .search_popup .search_list li .rating img {}
+.h_bg header .h_right .h_top .search .search_popup .keywords_recommend {
+    display:flex; flex-flow:row wrap;
+}
+.h_bg header .h_right .h_top .search .search_popup .keywords_recommend a {
+    border:1px solid #fff; padding:10px 15px; border-radius:20px;
+    margin:0 7px 7px 0;
+}
+/* ===========================header 검색팝업(E)*/
+.h_bg header .h_right .h_btm {
+    clear:both; 
+    /* 앞 형제한테 들어가는 값이 반복되지 않게 앞에 적용된 float 제거하는방법 */
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+.h_bg header .h_right .h_btm .h_b_left {
+}
+.h_bg header .h_right .h_btm .h_b_left a {
+    margin-right:28px; font-size:1.25rem; letter-spacing:-0.02rem;
+}
+.h_bg header .h_right .h_btm .h_b_left a:last-child{margin:0;}
+.h_bg header .h_right .h_btm nav {}
+.h_bg header .h_right .h_btm nav > a {
+    margin-right:35px; font-size:1.25rem; letter-spacing:-0.02rem;
+}
+.h_bg header .h_right .h_btm nav > a:nth-child(4) {margin:0;}
+/* ===========================header 서브(S)*/
+.h_bg header .h_right .h_btm nav .sub_bg {
+    display:none;
+    background-color: #111;
+    position:absolute; left:0; top:125px; width:100%;
+    /* absolute, fixed 작성 시 반드시 좌표와 width 속성도 함께 써야한다. */
+}
+/* 스크롤내릴때 다른애랑 겹쳐져있다 absolute
+스크롤 왓다갔다해도 움직이지않고 나타나면 fixed */
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents {
+    width:1400px; margin:0 auto; height:240px;
+    display:flex; flex-flow:row nowrap; padding-top:40px;
+}
+/* depth1 2 공통선택자==== */
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1,
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 {
+    width:200px; padding-left:20px;
+}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 li,
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 li {
+    margin-bottom:20px;
+    font-weight:500; letter-spacing:-0.02rem;
+}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 li a,
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 li a {
+    display:block; padding-bottom:3px;
+    /* padding-bottom:20px; */
+}
+/* ====================== */
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 li {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 li a {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth1 .active {
+    border-bottom:2px solid #fff; 
+}
+/* =======================depth1 끝 */
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub li {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub li a {}
+/* ============================================공통 */
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub1 {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub1 li {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub1 li a {}
+/* =========================face끝 */
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub2 {display:none;}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub2 li {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub2 li a {}
+/* =========================eyes끝 */
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub3 {display:none;}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub3 li {}
+.h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub3 li a {}
+/* ===========================header 서브(E)*/
+/* =============================main */

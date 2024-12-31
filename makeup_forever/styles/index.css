@@ -144,3 +144,77 @@
 .h_bg header .h_right .h_btm nav .sub_bg .sub_contents .depth2 .sub3 li a {}
 /* ===========================header 서브(E)*/
 /* =============================main */
+main {}
+/* =============================main 1. 광고배너*/
+main .slides_wrap {
+    background-color:aquamarine;
+    position:relative; /* 버튼 스크롤바 기준설정 */
+    height:650px; /* 배너높이고정 (광고배너는 광고 요소에 따라 글자 단락이 다 다르기 때문에 내용 기준으로 자동 높이 설정 시 높낮이가 배너에 따라 달라지는 불균형문제가 발생한다. 그래서 광고배너는 높이를 px로 고정하는 경우들이 많다 그외엔 자동높이 설정 권장!!*/
+}
+main .slides_wrap .slides_container {
+    background-color:lime; 
+    height:100%; /* slides_wrap와 높이동일 */
+}
+main .slides_wrap .slides_container .slide {
+    height:100%; /* slides_container높이와 동일 */
+}
+main .slides_wrap .slides_container .slide .contents {
+    border:5px solid red;
+    width:1400px; margin:0 auto;
+    overflow:hidden;
+}
+main .slides_wrap .slides_container .slide .contents .title {
+    border:5px solid blue;
+    width:40%; float:right;
+    padding-top:179px;
+}
+main .slides_wrap .slides_container .slide .contents .title img {}
+main .slides_wrap .slides_container .slide .contents .title .bnr_link {
+    color:#fff; background-color:#000; letter-spacing:-0.02rem;
+    padding:10px 15px; border-radius:20px;
+    display:block; width:min-content;
+    margin-top:50px;
+}
+main .slides_wrap .slides_container .slide .contents .title .bnr_link:hover {
+    background:linear-gradient(360deg, transparent , rgba(0,0,0,0.9));
+}
+main .slides_wrap .prev_btn, main .slides_wrap .next_btn {
+    background-color:yellow;
+    position:absolute;  top:45%;
+}
+main .slides_wrap .prev_btn img , main .slides_wrap .next_btn img {}
+main .slides_wrap .prev_btn {left:100px;}
+main .slides_wrap .prev_btn img {}
+main .slides_wrap .next_btn {right:100px;}
+main .slides_wrap .next_btn img {}
+main .slides_wrap .scroll_bg {
+    background-color:#ccc;
+    width:1400px; height:2px;
+    position:relative; bottom:32px; 
+    margin:0 auto;
+}
+main .slides_wrap .scroll_bg .scrollbar {
+    background-color:#111;
+    width:200px; height:100%;
+}
+/* =============================main 1. 광고배너(개별배너)*/
+main .slides_wrap .slides_container .slide1 {
+    background-image:url(../images/bnr1.jpg);
+    display:none;
+}
+main .slides_wrap .slides_container .slide1 .contents {}
+main .slides_wrap .slides_container .slide1 .contents .title {}
+main .slides_wrap .slides_container .slide1 .contents .title img {}
+main .slides_wrap .slides_container .slide1 .contents .title .bnr_link {}
+main .slides_wrap .slides_container .slide2 {
+    background-image:url(../images/bnr2.jpg);
+    background-position-x:-70px;
+}
+main .slides_wrap .slides_container .slide2 .contents {}
+main .slides_wrap .slides_container .slide2 .contents .title {
+    float:left; width:min-content;
+    padding-left:237px;
+    padding-top:245px;
+}
+main .slides_wrap .slides_container .slide2 .contents .title img {}
+main .slides_wrap .slides_container .slide2 .contents .title .bnr_link {}

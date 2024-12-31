@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메포 연습용</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        main {}
+        main .slides_wrap {
+            background-color:orange;
+            height:650px;
+            position:relative;
+        }
+        main .slides_wrap .slides_container {
+            background-color:lime;
+            height:100%;
+        }
+        main .slides_wrap .slides_container .slide {
+            height:100%;
+        }
+        main .slides_wrap .slides_container .slide .contents {
+            border:2px solid red;
+            width:1440px; margin:0 auto;
+            overflow:hidden;
+        }
+        main .slides_wrap .slides_container .slide .contents .title {
+            border:2px solid blue;
+            width:40%; float:right; padding-top:179px;
+        }
+        main .slides_wrap .slides_container .slide .contents .title img {}
+        main .slides_wrap .slides_container .slide .contents .title .bnr_btn {
+            color:#fff; background-color:#111; border-radius:20px; padding:10px 15px;
+            display:block; width:min-content;
+            margin-top:50px;
+        }
+        /* 넘어가기버튼 */
+        main .slides_wrap .prev_btn, main .slides_wrap .next_btn {
+            background-color:pink;
+            position:absolute;
+            top:35%;
+        }
+        main .slides_wrap .prev_btn {left:100px;}
+        main .slides_wrap .prev_btn img {}
+        main .slides_wrap .next_btn {right:100px;}
+        main .slides_wrap .next_btn img{}
+        /* 스크롤바 */
+        main .slides_wrap .scroll_bg {
+            width:1400px; height:2px;
+            background-color:#ccc;
+            position:relative; bottom:32px;
+            margin:0 auto;
+
+        }
+        main .slides_wrap .scroll_bg .scrollbar {
+            background-color:#111; width:200px; height:2px;
+        }
+        /* 개별선택(광고배너1) */
+        main .slides_wrap .slides_container .slide1 {
+            background-image:url(./images/bnr1.jpg);
+        }
+        main .slides_wrap .slides_container .slide1 .contents {}
+        main .slides_wrap .slides_container .slide1 .contents title {}
+        main .slides_wrap .slides_container .slide1 .contents title img {}
+        main .slides_wrap .slides_container .slide1 .contents title .bnr_btn {}
+        /* 개별선택(광고배너2) */
+        main .slides_wrap .slides_container .slide2 {display:none;}
+        main .slides_wrap .slides_container .slide2 .contents {}
+        main .slides_wrap .slides_container .slide2 .contents title {}
+        main .slides_wrap .slides_container .slide2 .contents title img {}
+        main .slides_wrap .slides_container .slide2 .contents title .bnr_btn {}
+    </style>
+</head>
+<body>
+    <main>
+        <div class="slides_wrap">
+            <div class="slides_container">
+                <div class="slide slide1">
+                    <div class="contents">
+                        <div class="title">
+                            <img src="./images/bnr_title.png" alt="">
+                            <a href="#" class="bnr_btn">DISCOVER</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="contents">
+                        <div class="title">
+                            <img src="./images/bnr_title.png" alt="">
+                            <a href="#" class="bnr_btn">DISCOVER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="prev_btn"><img src="./images/bnr_prev.png" alt="이전광고보기"></a>
+            <a href="#" class="next_btn"><img src="./images/bnr_next.png" alt="다음광고보기"></a>
+            <div class="scroll_bg">
+                <div class="scrollbar"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

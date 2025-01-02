@@ -10,11 +10,15 @@ header .top h1 a img {height:90px;}
 header .top .tab_menu {
     overflow:hidden;
 }
-header .top .tab_menu li {
-    float:left; width:120px;
+header .top .tab_menu {
+    float:left; 
     padding:32px 0; 
 }
-header .top .tab_menu li a {font-size:1.25rem; font-weight:600; letter-spacing:-0.02rem;}
+header .top .tab_menu a {
+    margin-right:20px;
+    font-size:1.25rem; font-weight:600; letter-spacing:-0.02rem;
+}
+header .top .tab_menu a:last-child {margin:0;}
 header .title_bnr {
     background-image: url(../images/main_bnr.jpg);
     background-size:cover;

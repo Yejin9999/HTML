@@ -218,3 +218,91 @@ main .slides_wrap .slides_container .slide2 .contents .title {
 }
 main .slides_wrap .slides_container .slide2 .contents .title img {}
 main .slides_wrap .slides_container .slide2 .contents .title .bnr_link {}
+/* =========================================2행 이달의 인기상품 */
+main .monthly_best_wrap {
+    background-color:aqua;
+    width:1400px; margin:115px auto;
+}
+main .monthly_best_wrap .title {
+    background-color:lime;
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    margin-bottom:25px;
+}
+main .monthly_best_wrap .title h2 {font-size:1.88rem; font-weight:600;}
+main .monthly_best_wrap .title h2 .more {line-height:1.5; letter-spacing:-0.02rem;}
+main .monthly_best_wrap .contents {
+    background-color:yellow;
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+main .monthly_best_wrap .contents li {
+    background-color:orange;
+    width:calc((100% - (15px * 3)) / 4);
+}
+main .monthly_best_wrap .contents li .bestproduct {}
+main .monthly_best_wrap .contents li .bestproduct > a {}
+main .monthly_best_wrap .contents li .bestproduct > a img {width:100%;}
+main .monthly_best_wrap .contents li .besttxt {}
+main .monthly_best_wrap .contents li .besttxt .subtxt {
+    margin:10px 0;
+    color:#aaa;
+    line-height:1.5; letter-spacing:-0.02rem;
+}
+main .monthly_best_wrap .contents li .besttxt h3 {
+    font-size:1.25rem; letter-spacing:-0.02rem; font-weight:500;
+}
+main .monthly_best_wrap .contents li .besttxt .price {
+    margin-top:35px;
+    font-size:1.13rem; letter-spacing:-0.02rem; font-weight:500;
+}
+/* =========================================3행 FACE BEST */
+main .face_best_wrap {
+    width:1400px; margin:0 auto;
+}
+main .face_best_wrap .title {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    margin-bottom:25px;
+}
+main .face_best_wrap .title h2 {
+    font-size:1.88rem; font-weight:600;
+}
+main .face_best_wrap .title .more {line-height:1.5; letter-spacing:-0.02rem;}
+main .face_best_wrap .contents {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+main .face_best_wrap .contents li {
+    width:calc((100% - (30px * 2)) / 3);
+}
+main .face_best_wrap .contents li .product {
+    position:relative;
+}
+main .face_best_wrap .contents li .product .label {
+    background-color:#fff; 
+    padding:5px 10px;
+    position:absolute; left:0; top:0; /* 좌표는 absolute 랑 fixed 일때 써야함 */
+    line-height:1.5; letter-spacing:-0.02rem;
+}
+main .face_best_wrap .contents li .product > a {}
+main .face_best_wrap .contents li .product > a img {width:100%;}
+/*==시작:3행 상품 마우스 올렸을 시 출력대상=== */
+main .face_best_wrap .contents li .product:hover .icon {display:block;}
+main .face_best_wrap .contents li .product .icon {
+    display:none;
+    position:absolute; left:0; bottom:180px;
+    width:100%; text-align:center;
+}
+main .face_best_wrap .contents li .product .icon a {opacity:0.5;}
+main .face_best_wrap .contents li .product .icon a:hover {opacity:1;}
+main .face_best_wrap .contents li .product .icon a img {}
+/*==끝:3행 상품 마우스 올렸을 시 출력대상=== */
+main .face_best_wrap .contents li .txt {}
+main .face_best_wrap .contents li .txt .category {
+    margin:10px 0;
+    line-height:1.5; letter-spacing:-0.02rem;
+}
+main .face_best_wrap .contents li .txt h3 {
+    font-size:1.25rem; letter-spacing:-0.02rem; font-weight:500;
+}
+main .face_best_wrap .contents li .txt .price {
+    margin-top:35px;
+    font-size:1.13rem; letter-spacing:-0.02rem; font-weight:500;
+}

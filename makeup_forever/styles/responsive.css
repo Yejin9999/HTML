@@ -1,0 +1,39 @@
+@media screen and (max-width:1400px){
+    /* ===================시작:태블릿 경우(너비가 1400이하) */
+    .h_bg {padding:0 80px;}
+    /* ===================끝:태블릿 경우(너비가 1400이하) */
+}
+@media screen and (max-width:850px){
+    /* ===================시작:태블릿 경우(너비가 850이하) */
+    .h_bg header {
+        flex-flow:column nowrap; align-items:flex-start;
+        justify-content:center; position:relative;
+    }
+    .h_bg header h1 {position:absolute; top:20px;}
+    .h_bg header h1 a img {width:100px;}
+    .h_bg header .h_right {
+        width:100%;
+        padding:0;
+    }
+    /* ===================끝:태블릿 경우(너비가 850이하) */
+}
+@media screen and (max-width:730px){
+    /* ===================시작:모바일 경우(너비가 730이하) */
+    .h_bg {padding:0 15px;}
+    .h_bg header .h_right .h_btm .h_b_left a,
+    .h_bg header .h_right .h_btm nav > a {font-size:0.88rem;}
+    /* ===================끝:모바일 경우(너비가 730이하) */
+}
+@media screen and (max-width:600px){
+    /* ===================시작:모바일 경우(너비가 600이하) */
+    .h_bg header {
+        flex-flow:row nowrap;
+        align-items:center;
+    }
+    .h_bg header .h_right .h_top .search .m_all_nav {display:inline-block;}
+    .h_bg header .h_right .h_top > a,
+    .h_bg header .h_right .h_btm{display:none;}
+    .h_bg header .h_right .h_top .search > a img {width:24px;}
+    .h_bg header h1 {position:relative; top:0;} /* absolute때문에 로고 위치 안맞는거 앱솔 없애고 원래위치로 돌아가게하기 위한것 */ 
+    /* ===================끝:모바일 경우(너비가 600이하) */
+}

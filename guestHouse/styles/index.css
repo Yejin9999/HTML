@@ -31,7 +31,7 @@ main .title_bnr {
 }
 main .title_bnr h1,
 main .title_bnr p {
-position:absolute; bottom:33px;
+    position:absolute; bottom:33px;
 }
 main .title_bnr h1 {
     font-size:2.19rem; font-weight:700; line-height:1.5; letter-spacing:-0.02rem; color:#fff;

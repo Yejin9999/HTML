@@ -137,6 +137,7 @@ function gg(){
     console.log('test')
     window.location.href ='http://google.com';
     /* window.location.replace('http://google.com'); */ //뒤로가기가 안되서 불편함
+    //loacation은 속성
 }
 window.document.write('test');
 window.document.body.style = 'background-color:pink;' 

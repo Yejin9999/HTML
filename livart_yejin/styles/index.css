@@ -255,7 +255,6 @@ main .event_wrap ul li p {
 /* ===프로모션 끝===== */
 /* ===베스트리뷰시작==== */
 main .review {
-    background-color:aquamarine;
     width:1761px; margin:150px auto;
 }
 main .review h2 {
@@ -284,3 +283,33 @@ main .review .review_contents ul li p {
     font-size:1.38rem; font-weight:500; line-height:1.5; letter-spacing:-0.02rem;
 }
 /* ===베스트리뷰끝==== */
+/* ========footer시작 */
+footer {
+    background-color:#1C1B1F;
+    width:100%; margin:0 auto;
+}
+footer .fcontents {}
+footer .fcontents .top {}
+footer .fcontents .top .top_left {}
+footer .fcontents .top .top_left a {}
+footer .fcontents .top .top_right {}
+footer .fcontents .top .top_right a {}
+footer .fcontents .link {}
+footer .fcontents .link a {}
+footer .fcontents .link a img {}
+footer .fcontents .link .sns {}
+footer .fcontents .link .sns a {}
+footer .fcontents .link .sns a img {}
+footer .fcontents .bottom {}
+footer .fcontents .bottom address {
+    color:#fff;
+}
+footer .fcontents .bottom > p {
+    color:#fff;
+}
+footer .fcontents .bottom .qr {}
+footer .fcontents .bottom .qr p {
+    color:#fff;
+}
+footer .fcontents .bottom .qr a {}
+footer .fcontents .bottom .qr a img {}

@@ -7,7 +7,7 @@ header {
 header .head_men {
     display:flex; flex-flow:row nowrap;
     justify-content:space-between;
-    align-items:center;
+    margin-top:15px;
 }
 header .head_men h1 {}
 header .head_men h1 a {display:block;}

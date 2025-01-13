@@ -1,6 +1,5 @@
 /* 헤더 시작 */
 header {
-    background-color:coral;
     height:100px;
     padding:10px 80px;
 }
@@ -17,7 +16,6 @@ header .head_men nav {
     align-items:center;
 }
 header .head_men nav .left_men {
-    background-color:palegreen;
     display:flex; flex-flow:row nowrap;
     margin-right:320px;
     
@@ -30,7 +28,6 @@ header .head_men nav .left_men a {
 }
 header .head_men nav .left_men a:last-child {margin:0;}
 header .head_men nav .right_men {
-    background-color:pink;
     display:flex; flex-flow:row nowrap;
 }
 header .head_men nav .right_men a {
@@ -176,7 +173,7 @@ main .sale_wrap .sale_items ul li .sale_details .name {
     font-size:1.13rem; font-weight:500; line-height:1.5; letter-spacing:-0.02rem;
 }
 main .sale_wrap .sale_items ul li .sale_details .price {
-    line-height:1.5; letter-spacing:-0.02rem;
+    line-height:1.5; letter-spacing:-0.02rem; text-decoration:line-through;
     color:#787878;
 }
 main .sale_wrap .sale_items ul li .sale_details .sale_price {

@@ -18,6 +18,7 @@ function userFunc1(){
     console.log(result);
     goal.innerHTML = `${result} kg입니다.` ;
 }
+
 resultBtn.addEventListener('click',userFunc2);
 function userFunc2(){
     let excessResult = (Number(userHeight.value)-100)*0.9 - Number(userWeight.value);

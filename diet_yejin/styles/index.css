@@ -1,0 +1,80 @@
+main {
+    width:1240px; margin:0 auto;
+    text-align:center;
+    background-image:url(../images/background_img3.jpg);
+    background-position:center;
+}
+main h1 {
+    text-align:center;
+    font-size:1.88rem; font-weight:700;
+    padding-top:55px; margin-bottom:150px;
+}
+main .contents {
+    width:552px; margin:0 auto;
+}
+main .contents dl {}
+main .contents dl dt {
+    font-size:1.25rem; font-weight:700;
+}
+main .contents dl dd {
+    border:1px solid #aaa;
+    padding:0 5px;
+}
+main .contents .height {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
+main .contents .height dt {}
+main .contents .height dd {
+}
+main .contents .height .userHeight{}
+main .contents .weight {
+    display:flex;
+    flex-flow:row nowrap; justify-content:space-between;
+    margin-top:30px;
+}
+main .contents .weight dt {}
+main .contents .weight dd {}
+main .contents .weight .userWeight{
+}
+main button {
+    background-color:#416889;
+    color:#fff;font-size:1.56rem; font-weight:700;
+    padding:15px 30px; border-radius:20px;
+    margin:150px 0;
+}
+main .resultWeight {
+    width:1080px; margin:0 auto;
+    display:flex; flex-flow:row nowrap;
+}
+main .resultWeight h2 {
+    color:#416889;
+    font-size:1.56rem; font-weight:700;
+}
+main .resultWeight .goal {
+    margin-left:20px;
+    font-size:1.25rem; font-weight:500;
+}
+main .resultWeight .goal span{
+    margin-left:20px;
+    font-size:1.25rem; font-weight:500;
+}
+main .excessWeight {
+    width:1080px; margin:0 auto;
+    display:flex; flex-flow:row nowrap;
+}
+main .excessWeight h2 {
+    color:#416889;
+    margin-top:30px;
+    font-size:1.56rem; font-weight:700;
+}
+main .excessWeight .excess {
+    margin-left:20px;
+    margin-top:30px;
+    font-size:1.25rem; font-weight:500;
+}
+main .excessWeight .excess span {
+    margin-left:20px;
+    font-size:1.25rem; font-weight:500;
+}

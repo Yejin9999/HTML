@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>적정체중계산기 | 건강박사</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./script/index.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>적정체중계산기</h1>
+        <div class="contents">
+            <dl class="height">
+                <dt>키(신장)</dt>
+                <dd><input type="number" name="userHeight" id="userHeight" placeholder="키를 입력하세요"></dd>
+            </dl>
+            <dl class="weight">
+                <dt>몸무게</dt>
+                <dd><input type="number" name="userWeight" id="userWeight" placeholder="몸무게를 입력하세요"></dd>
+            </dl>
+        </div>
+        <button type="button">결과보기</button>
+        <div class="resultWeight">
+            <h2>당신의 적정체중은?</h2>
+            <p class="goal">0<span>kg입니다.</span></p>
+        </div>
+        <div class="excessWeight">
+            <h2>평균체중보다</h2>
+            <p class="excess">0<span>kg초과 되었습니다.</span></p>
+        </div>
+    </main>
+</body>
+</html>

@@ -82,9 +82,15 @@ main .product_container .contents dl dd .ship_schedule {
 }
 main .product_container .contents dl dd .ship_schedule em {}
 /* ==(ship_schedule 클릭시 열리는 부분) */
+/* =====★★★★★★★★★★★배송정보(js 클래스 전용)★★★★★★★★★★★★★★★★★★★★★======== */
+/* toggle메소드 활용 교차 클래스 생성 목적 */
+main .product_container .contents dl dd .hide {display:none !important;}  
+/*  hide = schedule_open !important:강제우선순위설정*/
+/* js관계없이 정적 css shchedule_open(아래) */
 main .product_container .contents dl dd .schedule_open {
     padding:15px 10px; background-color:#eee; border-radius:7px;
      border-top:1px solid #c5c5c5;
+     display:block; 
 }
 main .product_container .contents dl dd .schedule_open > * {display:block;}
 main .product_container .contents dl dd .schedule_open em {
@@ -123,6 +129,16 @@ main .product_container .contents .order_contents .select_contents select#size {
     margin:25px 0;
 }
 main .product_container .contents .order_contents .select_contents select#size option {}
+/* ==주문 개수 설정 */
+main .product_container .contents .order_contents .num {float:right;}
+main .product_container .contents .order_contents .num #product_num {
+    border:1px solid #ccc; width:50px; border-radius: 5px; margin-left:10px;
+}
+main .product_container .contents .order_contents .num #minus {}
+main .product_container .contents .order_contents .num #plus {}
+main .product_container .contents .order_contents .num button {
+    background-color:#eee; width:25px; height:25px; border-radius:5px;
+}
 /* ==주문금액== */
 main .product_container .contents .order_contents .order_price {
     display:flex; justify-content:space-between; margin-bottom:25px;
@@ -149,3 +165,32 @@ main .product_container .contents .order_contents .order_btn #cart_btn {
 main .product_container .contents .order_contents .order_btn #buy_btn {
     background-color:#59AFFF; color:#fff; border: 1px solid #fff;
 }
+/* 장바구니 클릭 시 실행되는 팝업 */
+main .cart_open_bg {
+    background-color:rgba(0,0,0,0.6);
+    position:fixed; left:0; top:0;
+    width:100%; height:100vh;
+}
+main .cart_open_bg .cart_container {
+    width:700px; background-color:#fff;
+    margin:200px auto 0;
+    text-align:center; padding:50px;
+    
+}
+main .cart_open_bg .cart_container p {
+    font-weight:500; line-height:1.5; letter-spacing:-0.02rem;
+}
+main .cart_open_bg .cart_container .link {
+    margin-top:50px; 
+}
+main .cart_open_bg .cart_container .link a {
+    
+    margin-left:20px; padding:10px; color:#fff;
+    background-color:#59AFFF; border-radius:10px;
+    border:1px solid #ccc; 
+}
+main .cart_open_bg .cart_container .link a:nth-child(1) {
+    margin:0;
+    background-color:#fff; color:#aaa; border:1px solid #ccc;
+}
+main .cart_open_bg .cart_container .link a:nth-child(2) {}

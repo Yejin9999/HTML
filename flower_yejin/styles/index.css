@@ -1,0 +1,31 @@
+main {
+    background-color:pink;
+    width:900px; height:100vh; margin:0 auto;
+    padding:100px 0;
+}
+main .date {
+    
+    margin-bottom:100px;
+    display:flex; flex-flow:row nowrap; justify-content:space-around;
+}
+main .date .year {}
+main .date .year #yearInput {
+    width:100px;
+}
+main .date .year span {margin-left:20px; color:#fff; font-weight:600;}
+main .date .month {}
+main .date .month #monthInput {width:100px;}
+main .date .month span {margin-left:20px; color:#fff; font-weight:600;}
+main .date .day {}
+main .date .day #dayInput {width:100px;}
+main .date .day span {margin-left:20px; color:#fff; font-weight:600;}
+main .result {text-align:center;}
+main .result #resultBtn {
+    background-color:rgba(250, 45, 45, 0.3);
+    border-radius:20px; border:2px solid #fff;
+    color:#fff;
+    padding:20px 50px;
+    font-weight:600;
+}
+main .result p {
+}

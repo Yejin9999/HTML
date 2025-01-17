@@ -8,8 +8,8 @@ const yearInput = document.querySelector('#yearInput');
 const monthInput = document.querySelector('#monthInput');
 const dayInput = document.querySelector('#dayInput');
 const resultBtn = document.querySelector('#resultBtn');
-const resultP = document.querySelector('.result p');
-console.log(yearInput,monthInput,dayInput,resultBtn);
+const resultP = document.querySelector('.result');
+console.log(yearInput,monthInput,dayInput,resultBtn,resultP);
 
 const birthday_flower = [
     {
@@ -62,33 +62,36 @@ const birthday_flower = [
         content:'축하, 감사'
     }
 ]
-console.log(birthday_flower);
+
 console.log(birthday_flower[0]);
-console.log(birthday_flower[1]);
+console.log(birthday_flower[10]);
 
+/* 달라지는 변수는? 월 탄생화 꽃말
 
+function result(a,b,c){
+    resultP.innerText = `${a}월의 탄생화는 ${b}이고 꽃말은 ${c}입니다.`
+} 
 
-//배열? 입력하는 월에 따라 탄생화와 꽃말이 그에 맞게 달라짐
+*/
+
+/* 결과버튼 클릭 시 각 달마다 `${a}월의 탄생화는 ${b}이고 꽃말은 ${c}입니다.` 맞는 문구의 결과가 나와야함
 
 resultBtn.addEventListener('click',()=>{
-    if(yearInpu.value === 1){
-        resultP.textContent = `${data1}월의 탄생화는 ${data2}이고 꽃말은 ${data3}입니다.`
-    }
-})
+    if(monthInput.value === 1){}
+    else if(monthInput.value === 2){}
+    else if(monthInput.value === 3){}
+    else if(monthInput.value === 4){}
+    else if(monthInput.value === 5){}
+    else if(monthInput.value === 6){}
+    else if(monthInput.value === 7){}
+    else if(monthInput.value === 8){}
+    else if(monthInput.value === 9){}
+    else if(monthInput.value === 10){}
+    else if(monthInput.value === 11){}
+    else if(monthInput.value === 12){}
+    else{resultP.innerText = '생년월일을 다시 입력해주세요'}
+    
+});
 
 
-
-
-
-/* 
-resultBtn.addEventListener('click',()=>{
-    if(monthInput.value === 1){
-        resultP.innerText = result
-    }
-})
-
-function result(data1,data2,data3){
-    let txt = `${data1}월의 탄생화는 ${data2}이고 꽃말은 ${data3}입니다.`   ;
-    return txt;
-
-} */
+ */

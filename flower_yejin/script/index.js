@@ -66,18 +66,22 @@ const birthday_flower = [
 console.log(birthday_flower[0]);
 console.log(birthday_flower[10]);
 
+console.log(birthday_flower[0].month);
+console.log(birthday_flower[0].flower);
+console.log(birthday_flower[0].content);
+
 /* 달라지는 변수는? 월 탄생화 꽃말
-
-function result(a,b,c){
-    resultP.innerText = `${a}월의 탄생화는 ${b}이고 꽃말은 ${c}입니다.`
-} 
-
-*/
 
 /* 결과버튼 클릭 시 각 달마다 `${a}월의 탄생화는 ${b}이고 꽃말은 ${c}입니다.` 맞는 문구의 결과가 나와야함
 
+
+//결과변수만들고 복합대입으로 데이터쌓고 템플릿문자열로 resultP.innerText = 결과변수
 resultBtn.addEventListener('click',()=>{
-    if(monthInput.value === 1){}
+    if(monthInput.value === 1){
+        resultP.innerText = birthday_flower[monthInput.value-1.month]
+        resultP.innerText = birthday_flower[monthInput.value-1.flower]
+        resultP.innerText = birthday_flower[monthInput.value-1.content]
+    }
     else if(monthInput.value === 2){}
     else if(monthInput.value === 3){}
     else if(monthInput.value === 4){}
@@ -92,6 +96,5 @@ resultBtn.addEventListener('click',()=>{
     else{resultP.innerText = '생년월일을 다시 입력해주세요'}
     
 });
-
 
  */

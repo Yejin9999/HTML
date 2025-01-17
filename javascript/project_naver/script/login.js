@@ -73,3 +73,80 @@ loginTitle[0].addEventListener('click',()=>{
     //3. id로그인 내용만 보이기
     loginContent[0].style.display = 'block'
 })
+
+//============아이디&비밀번호 유효성 검사
+//1. 아이디 입력 오류 '아이디를 입력해 주세요'
+//1-1 'userId'사용자가 아이디를 입력안하고 => '' 빈문자열 사용
+//1-2 'loginBtn'로그인 버튼 클릭 시
+//1-3 'errorMsg'오류 메세지 출력 '아이디를 입력해주세요'
+
+//2. 비밀번호 입력 오류 '비밀번호를 입력해주세요'
+//2-1. (선행조건) 아이디 입력하고 비밀번호만 입력안했을 경우 
+//2-2. 'userPw' 사용자가 아이디는 입력하고 비밀번호를 입력안하고
+//2-3. 'loginBtn' 로그인 버튼 클릭 시
+//2-4. 'errorMsg'오류 메세지 출력 '비밀번호를 입력해주세요'
+
+//3. 로그인 오류 '아이디와 비밀번호가 잘못되었습니다. 다시 확인해주세요'
+//3-1. (선행조건) 아이디와 비밀번호를 모두 입력했을때 기준
+//3-2. 사용자가 아이디와 비밀번호를 모두 입력 후
+//3-3. 'loginBtn' 로그인 버튼 클릭 시
+//3-4. 'errorMsg'오류 메세지 출력 '아이디와 비밀번호가 잘못되었습니다. 다시 확인해주세요'
+
+const userId = document.querySelector('#user_id');
+const userPw = document.querySelector('#user_pw');
+const loginBtn = document.querySelector('#login')
+const errorMsg = document.querySelector('.error_message')
+console.log(userId,userPw,loginBtn,errorMsg);
+
+errorMsg.style.color = 'red';
+errorMsg.style.fontSize = '0.88rem';
+errorMsg.style.margin = '30px 0';
+
+loginBtn.addEventListener('click',()=>{
+    if(userId.value === '') errorMsg.textContent = '아이디를 입력해주세요'; //(짧아서 옆으로 적을땐 {중괄호} 안적어도되지만 엔터 치고 쓰려면 {}써야함)
+    //userId값이 빈문자열인가(거짓)일때 인식하는 두번째 조건식(아래)
+    else if(userPw.value === ''){
+        errorMsg.textContent = '비밀번호를 입력해주세요';
+    }
+    //userId빈문자열인가(거짓)이고 userPw빈문자열인가(거짓)일때 (모든조건이 거짓일때)
+    else {
+        errorMsg.textContent = '아이디와 비밀번호가 잘못되었습니다. 다시확인해주세요'
+    }
+})
+
+//1.일회용 로그인번호 오류 '일회용번호를 입력해주세요'
+//1-1 'numInput'일회용번호를 입력하지 않고
+//1-2 'loginBtn' 로그인 버튼 클릭 시
+//1-3 오류메시지 출력
+
+const numInput = document.querySelector('#one_time_num');
+const onetimeloginBtn = document.querySelector('#one_time_loginBtn');
+const onetimeMsg = document.querySelector('.onetime_error_message');
+console.log(numInput,onetimeloginBtn,onetimeMsg)
+
+onetimeMsg.style.color = 'red';
+onetimeMsg.style.fontSize = '0.88rem';
+onetimeMsg.style.margin = '30px 0';
+
+
+onetimeloginBtn.addEventListener('click',()=>{
+    if(numInput.value === '') onetimeMsg.textContent = '일회용 번호를 입력해주세요.';
+})
+
+// =========ip 보안 on/off 글자 변경 js
+//0. check#op_on 체크되어있는경우 ON / 체크해제 경우 OFF
+//1. ON 기본 활성화(html,css 준비)
+//2. 'ipCheckbox' 체크박스의 상태를 변경(change)했을때 (눌렀을때)
+//3. 'switchState' 체크가 되어있었다면 switch_state 글자를 ON->OFF 로 변경
+//4. 체크가 해제상태라면 switch_state 글자를 OFF->ON 로 변경
+
+const ipCheckbox = document.querySelector('#ip_on');
+const switchState = document.querySelector('.switch_state')
+console.log(ipCheckbox,switchState);
+
+ipCheckbox.addEventListener('change',()=>{
+    /* console.log('상태변경'); */
+    //css에서 체크했을때는 태그:checked
+    //자바스크립트에선 객체.checked
+    switchState.textContent = ipCheckbox.checked ? 'ON' : 'OFF';
+})

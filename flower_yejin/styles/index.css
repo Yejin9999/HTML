@@ -19,13 +19,17 @@ main .date .month span {margin-left:20px; color:#fff; font-weight:600;}
 main .date .day {}
 main .date .day #dayInput {width:100px;}
 main .date .day span {margin-left:20px; color:#fff; font-weight:600;}
-main .result {text-align:center;}
-main .result #resultBtn {
+main .btn {text-align:center;}
+main .btn #resultBtn {
     background-color:rgba(250, 45, 45, 0.3);
     border-radius:20px; border:2px solid #fff;
     color:#fff;
     padding:20px 50px;
     font-weight:600;
 }
+main .result {
+    text-align:center;
+}
 main .result p {
+    margin-top:50px
 }

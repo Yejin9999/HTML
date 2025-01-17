@@ -45,14 +45,15 @@
                             </div>
                             <div class="ip_state">
                                 <a href="#" target="_blank">IP보안</a>
-                                <input type="checkbox" name="ip_on" id="ip_on">
+                                <input type="checkbox" name="ip_on" id="ip_on" checked> <!--  활성화되어있다 -->
                                 <label for="ip_on">
                                     <span class="switch"></span>
-                                    <span class="switch_state">OFF</span>
+                                    <span class="switch_state">ON</span>
                                 </label>
                             </div>
                         </div>
                             <!-- 로그인 오류메세지 출력위치 (js) -->
+                             <p class="error_message"></p>
                             <div class="login_btn">
                                 <button type="button" id="login">로그인</button>
                             </div>
@@ -66,6 +67,7 @@
                         <div class="num_input">
                             <input type="number" name="one_time_num" id="one_time_num" placeholder="번호를 입력하세요">
                         </div>
+                        <p class="onetime_error_message"></p>
                         <div class="login_btn">
                             <button type="button" id="one_time_loginBtn">로그인</button>
                         </div>
@@ -84,8 +86,7 @@
                         <div class="qr_bottom">
                             <p>공용 네트워크, 공용PC라면 안전을 위해<br>QR코드로 로그인해주세요.</p>
                             <div class="qr_detail">
-                                <p><em>네이버 앱</em><em>>렌즈</em>를 눌러 QR코드를 스캔하여 보이는 숫자 중 <span>21</span>를 선택하면 로그인 됩니다.</p>
-                                <a href="#">?</a>
+                                <p><em>네이버 앱</em><em>>렌즈</em> 를 눌러 QR코드를 스캔하여<br> 보이는 숫자 중 <span>21</span> 를 선택하면 로그인 됩니다.<a href="#"></a></p>
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,190 @@
+.btn1 {
+    background-color:#3498db;
+    color:#fff;
+    border-radius:5px; font-size:1.2rem;
+    padding:15px 30px;
+    /* 변경되는 효과(hover)를 서서히 변경되는 애니메이션 효과를 주고싶을때 */
+    transition:background 2s, font-size 0.5s 1s; /* 보통 0.3에서 0.5 */
+    
+}
+.btn1:hover {
+    background-color:#832938; font-size:0.8rem;
+}
+.btn2 {
+    border:2px solid #fa8072;
+    border-radius:30px;
+    padding:20px 30px;
+    transition:background 0.5s, font-weight 0.3s 0.5s;
+
+}
+.btn2:hover {
+    background-color:#fa8072; color:#fff; font-weight:600; border-color:#fff;
+}
+
+.btn3 {
+    width:200px; height:100px; color:#fff;
+    font-size:1.2rem; font-weight:700;
+    border-radius:10px;
+    background:url(https://i.pinimg.com/474x/1d/ad/6d/1dad6dee368a6d4fd36232a8a258071f.jpg);
+    background-size:100% auto;
+    background-position:40% 60%;
+    transition:background 0.5s, background-position 1.5s, background-size 1s; 
+}
+.btn3:hover {
+    background:url(https://i.pinimg.com/474x/1d/ad/6d/1dad6dee368a6d4fd36232a8a258071f.jpg);
+    background-position:40% 100%; /* 기존 수치를 토대로 입력(px %) 해야 자연스럽게 이어짐 */
+    background-size:120% auto;
+}
+.btn4 {
+    width:200px; height:300px;
+    color:#000; font-weight:700;
+    border-radius:10px;
+    background:url(https://i.pinimg.com/736x/38/ec/31/38ec3189109a8ef1e78c06ef1474125c.jpg);
+    background-size:cover;
+    transition:background 0.5s ,background-position 1.5s,font-size 0.3s, 1s;
+    
+}
+.btn4:hover {
+    background:url(https://i.pinimg.com/236x/a7/0c/3b/a70c3b33b62af2c1d0ebe6b8e5aeb373.jpg);
+    background-size:100% auto;
+    font-size:1.2rem;
+    color:#fff
+}
+
+/* 메뉴스타일 */
+.gnb {
+    max-width:600px; display:flex;
+}
+.gnb a {/* 공통 a */display:block; width:100%; line-height:60px;}
+.gnb > li {
+    width:calc(100% / 2); text-align:center;
+    position:relative;
+}
+.gnb > li > a {
+    background-color:#222; color:#fff;
+}
+.gnb > li > .sub {
+    position:absolute; width:100%; /* 서브메뉴는 배너위에 겹쳐서 나타나야하니까 앱솔줘야함 앱솔주고 너비값주기 */
+    left:0; top:100%;
+    height:0; overflow:hidden;
+    transition:height 0.3s;
+}
+.gnb > li > .sub li {border-bottom:1px solid #ddd;}
+.gnb > li > .sub li a {
+    background-color:#eee; color:#222;
+}
+/* hover -menu */
+.gnb > li:hover .sub {
+    height:180px; /* li에 각각 line-height 60px줬으니까 그 높이를*/
+}
+.gnb >li .sub a:hover {background:#fff;}
+
+/* 서브메뉴 하나하나 올렸을때 배경바뀌게함 */
+
+.bnr {height:500px; 
+    background-image:url(https://i.pinimg.com/736x/73/6f/e1/736fe1a4e67399f66b28d708be2de69d.jpg);
+    background-size:cover;
+    background-position:70%;
+}
+
+.gnb2 {max-width:1900px; display:flex;}
+.gnb2 a {display:block; width:100%; line-height:50px;}
+.gnb2 > li {
+    width:calc(100% / 2); text-align:center;
+    background-color:#222;
+    position:relative;
+    padding:10px 0;
+    
+}
+
+.gnb2 > li a {color:#fff; font-weight:700; font-size:1.2rem;}
+.gnb2 > li > .sub {
+    position:absolute; width:100%; height:0;
+    left:0; top:100%;
+    overflow:hidden;
+    transition:height 0.5s;
+}
+.gnb2 > li:hover .sub {height:150px;}
+.gnb2 > li .sub a:hover {
+    background-color:rgb(74, 165, 226,0.7);
+    font-weight:600;
+
+}
+.gnb2 > li > .sub li {border-bottom:1px solid #d9d9d9;}
+.gnb2 > li > .sub li a {
+    background-color:#ff8476;
+    font-size:1.0rem; font-weight:400;
+}
+.bnr {}
+
+/* 버튼 애니메이션(Gradient 활용) */ 
+/* 사이즈키우고 포지션으로 움직여서 */
+.btn5 {
+    width:300px; height:150px; border-radius:10px;
+    background:linear-gradient(90deg,#3498db,#fff,#3498db);
+    background-size:400%;
+    background-position:0 0; /* 0 0 -> 왼쪽상단(기본값) */
+    transition:background-position 1s;
+}
+.btn5:hover {
+    background-position:100% 0; /* 100% 0 -> 오른쪽상단으로감 */
+}
+
+.btn6 {
+    width:200px; height:150px; border-radius:50%;
+    background:linear-gradient(90deg,#fa8072,#fff,#f15443);
+    background-size:400%;
+    background-position:0 0;
+    transition:background-position 1s;
+}
+.btn6:hover {
+    background-position:60% 100%;
+}
+
+h1 {
+    font-size: 4rem; font-weight: 900; letter-spacing:-0.04rem;
+    background:linear-gradient(90deg,#3498db,#fff,#ba2af3,#3498db);
+    width:max-content; /* 배경을 딱 글자에 알맞게 맞추기 */
+    padding:5px;
+    /* 글자 안에서만 gradient 적용되게 만들기 */
+    color:transparent; /* 글자투명하게 */
+    -webkit-background-clip:text; /* 배경을 글자에서 보이게 하겠다(배경에 그라디언트 넣은걸 글짜에 넣는거  */
+    background-size:400%; background-position:100% 0; /* 오른쪽끝 */
+    transition:background-position 4s;
+} 
+h1:hover {
+    background-position:0 0; /* 왼쪽끝 */
+}
+h2 {
+    font-size:4rem; font-weight:900; letter-spacing:-0.04rem;
+    background:linear-gradient(90deg,#ff8476,#fff,#e23e3e,#c41843);
+    width:max-content;
+    padding:5px;
+    color:transparent;
+    -webkit-background-clip:text;
+    background-size:400%; background-position:100% 0;
+    transition:background-position 2s;
+}
+h2:hover {
+    background-position:0 0;
+}
+/* 이동애니메이션 (가속도 활용) */
+.box {
+    width:500px; height:500px; border:2px solid #222;
+    position:relative;
+}
+.box p {
+    width:100px; height:100px; background: #3498db;
+    border-radius:50%;
+    position:absolute; left:0; top:0;
+    transition:all 0.5s cubic-bezier(0.19, 0.84, 0.78,-0.17); /* 모든 값을 동일하게 적용하고싶으면 all */
+    /* 가속도 종류와 뜻 */
+    /*
+    1. ease(기본값) 중간은 빠르게 도착할수록 느리게(가장자연스러움)
+    2. linear 일정한 속도
+    3. ease-in 천천히 시작해서 점점 빨라짐
+    4. ease-out 빠르게 시작해서 점점 느려짐
+    5. cubic-bezier(가속도 곡선설정 0-1값 사이 (소수점가능) - 커스텀애니메이션속도)
+     */
+}
+.box:hover p {left:80%; top:80%;}

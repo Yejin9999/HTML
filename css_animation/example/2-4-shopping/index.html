@@ -22,13 +22,18 @@
             display:flex; justify-content:space-between;
             flex-flow:column wrap; 
         }
-        main section a .img img {
+        main section a .img {
+            overflow:hidden;
+            height:250px;
+        } /* 호버적용 시 사진크기 벗어나는걸 막기위해 이미지 갖고 있는 부모에 overflow:hidden*/
+        /*너비는 flex가 적용되어있어 자동으로 100%을 갖고있지만 높이는 적용되어있지않기때문에 높이따로조정 */
+        main section a .img img { 
             width:100%; border-radius:3px;
-            transition:transform 1s;
+            transition:transform 0.5s;
         }
         main section a:hover .img img {
             filter:grayscale(100%);
-            transform:scale(1.2);
+            transform:scale(1.1);
         }
         /* 상품 내용 디자인 상세 */
         main a > span {font-size:0.91rem; letter-spacing:-0.5px; line-height:1.5;}

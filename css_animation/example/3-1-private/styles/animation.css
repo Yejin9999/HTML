@@ -1,0 +1,33 @@
+
+main .car #left_tire, main .car #right_tire {
+    position:absolute; bottom:25px; width:67px;
+    animation:tire 1s linear infinite;
+}
+
+main .scroll {}
+main .scroll img {
+    animation:scroll 1s linear infinite alternate;
+}
+main .bg_wrap .bg1 {
+    animation:bg 50s linear infinite;
+}
+main .bg_wrap .bg2 {
+    animation:bg 30s linear infinite;
+}
+main .bg_wrap .bg3 {
+    animation:bg 10s linear infinite;
+}
+
+
+@keyframes tire {
+    0%{transform:rotate(0);}
+    100%{transform:rotate(360deg);}
+}
+@keyframes scroll {
+    0%{transform:translateY(0);}
+    100%{transform:translateY(-30px);}
+}
+@keyframes bg {
+    0%{background-position-x:0;}
+    100%{background-position-x:1000px;}
+}

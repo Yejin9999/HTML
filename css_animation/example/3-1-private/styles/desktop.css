@@ -1,4 +1,4 @@
-body, html {background:rgb(9,13,43)}
+body, html {background:#090d2b}
 /* design */
 header {
     height:80px; width:1400px; margin:0 auto;
@@ -6,11 +6,12 @@ header {
     align-items:center; z-index:999;
     position:fixed; left:50%; top:0; margin-left:-700px;
 }
-header nav a {margin:0 7px;}
+header nav a {color:#fff; margin:0 7px;}
 header .right a {
     position:relative; padding:5px 5px 5px 27px;
     border:1px dashed rgba(255,255,255,0.6); 
     font-size:0.875rem; border-radius:3px;
+    color:#fff;
 }
 header .right a::before {
     content:''; display:block;
@@ -36,7 +37,24 @@ main .txt, main .car_list, main .car, main .scroll {
     width:1400px; margin:0 auto; position:relative; z-index:30;
 }
 /* 메인배경 */
-main .bg_wrap .bg {width:1400px; margin:0 auto;}
+/* 메인배경 그라디언트주기 */
+main .bg_wrap::before {
+    content:''; display:block; width:50%; height:100%;
+    background:linear-gradient(90deg,#090d2b,transparent);
+    position:absolute; left:0; top:0;
+    z-index:999;
+}
+main .bg_wrap::after{
+    content:''; display:block; width:50%; height:100%;
+    background:linear-gradient(-90deg,#090d2b,transparent);
+    position:absolute; right:0; top:0;
+    z-index:999;
+    
+}
+main .bg_wrap .bg {
+    width:1400px; margin:0 auto;
+    background-repeat:no-repeat;
+}
 main .bg_wrap .bg1 {
     height:100px; 
     background:url(../images/bg_cloud.png) repeat-x;

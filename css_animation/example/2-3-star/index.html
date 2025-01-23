@@ -38,12 +38,11 @@
         }
         .menu_contents .menu a {
             margin-right:10px; overflow:hidden; position:relative;
-            border-radius:10px; 
+            transition:border-radius 1s;
         }
         .menu_contents .menu a:last-child {margin-right:0}
         .menu_contents .menu a img {width:100%;}
-        .menu_contents .menu a:hover {}
-        .menu_contents .menu a:hover .info {opacity:1;}
+        .menu_contents .menu a:hover .info {opacity:1; border-radius:10px;}
         .menu_contents .menu a:hover .info span {color:#fff;}
         /* 커피정보 */
         .menu_contents .menu .info {
@@ -53,6 +52,7 @@
             position:absolute; left:0; top:0;
             text-align:center;
             opacity:0;
+            transition:opacity 0.5s;
         }
         .menu_contents .menu .info span:first-child {padding-top:40%;}
         .menu_contents .menu .info span {

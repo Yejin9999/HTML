@@ -1,0 +1,167 @@
+header {border-bottom:1px solid #ccc;}
+main {
+    width:1630px; margin:67px auto 75px;
+    display:flex;
+
+}
+main .sub_contents {
+    width:100%;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+}
+main .sub_contents .product_photo {}
+main .sub_contents .product_photo .big {}
+main .sub_contents .product_photo .big a {}
+main .sub_contents .product_photo .big a img {width:100%; border-radius:15px;}
+main .sub_contents .product_photo .thumnail {
+    margin-top:40px;
+    text-align:center;
+}
+main .sub_contents .product_photo .thumnail a {
+    margin-left:30px;
+}
+main .sub_contents .product_photo .thumnail a:nth-child(1) {margin:0;}
+main .sub_contents .product_photo .thumnail a img {}
+main .sub_contents .product_photo .thumnail .active {}
+main .sub_contents .product_photo .thumnail .active img {border:2px solid #255D80;}
+/* =======사진부분 끝============================= */
+main .sub_contents .product_contents {
+    width:613px;
+
+}
+main .sub_contents .product_contents .sub_link {
+    display:flex; justify-content:space-between;
+}
+main .sub_contents .product_contents .sub_link p {
+    background-color:#255D80; 
+    padding:10px; 
+}
+main .sub_contents .product_contents .sub_link p a {
+    color:#fff;
+    font-size:0.94rem; letter-spacing:-0.02rem;
+}
+main .sub_contents .product_contents .sub_link .link {}
+main .sub_contents .product_contents .sub_link .link > a {
+    margin-right:15px; 
+}
+main .sub_contents .product_contents .sub_link .link > a:last-child {margin:0;}
+main .sub_contents .product_contents .sub_link .link > a img {}
+main .sub_contents .product_contents h1 {
+    margin:40px 0; font-size:1.88rem; font-weight:700;
+}
+main .sub_contents .product_contents .price_before {}
+main .sub_contents .product_contents .price_before span {
+    color:#aaa; font-weight:500; margin-right: 85px;
+}
+main .sub_contents .product_contents .price_before .price {
+    color:#000; font-size:1.88rem;
+}
+main .sub_contents .product_contents .price_before .price em {
+    font-size:1.88rem; font-weight:700;
+}
+main .sub_contents .product_contents .price_result {
+    margin:40px 0;
+}
+main .sub_contents .product_contents .price_result span {
+    color:#aaa; font-weight:500; margin-right: 85px;
+}
+main .sub_contents .product_contents .price_result .price {color:#000; font-size:1.88rem;} 
+main .sub_contents .product_contents .price_result .price em {
+    font-size:1.88rem; font-weight:700;
+}
+/* 혜택부분 */
+main .sub_contents .product_contents dl {
+    display:flex; flex-flow:row wrap;
+    align-items:center;
+}
+main .sub_contents .product_contents dl dt {
+    color:#aaa; 
+    font-size:0.94rem; font-weight:500;
+    
+}
+main .sub_contents .product_contents dl dd {
+    font-size:0.94rem; margin-left:100px; 
+}
+main .sub_contents .product_contents dl dd .coupon {
+    position:relative; top:-2px;
+}
+main .sub_contents .product_contents dl dd .coupon img {position:relative; top:3px;}
+main .sub_contents .product_contents dl dd a {font-size:0.94rem;}
+/* =========dl 개별 선택자================== */
+main .sub_contents .product_contents .coupon dd {
+    border:1px solid #aaa; border-radius:10px;
+    padding:10px; 
+}
+main .sub_contents .product_contents .delivery {margin:35px 0;}
+main .sub_contents .product_contents .benefit dd {display:flex; flex-flow:column nowrap;}
+main .sub_contents .product_contents .benefit dd a:first-child {margin-bottom:15px;}
+/* =====가격정보내용끝============= */
+main .sub_contents .product_contents .option {
+    display:flex; flex-flow:column nowrap;
+    border-top:1px solid #aaa;
+    margin-top:40px;
+    padding-top:40px;
+}
+main .sub_contents .product_contents .option #color {
+    padding:10px 20px; 
+    color:#aaa; font-weight:500;
+    border-radius:5px;
+    border:1px solid #aaa;
+    background-image:url(../images/more_option.png);
+    background-position:right;
+    background-repeat:no-repeat;
+}
+main .sub_contents .product_contents .option #color option {color:#000;}
+main .sub_contents .product_contents .option #size {
+    padding:10px 20px;
+    margin:40px 0;
+    border-radius:5px;
+    border:1px solid #aaa;
+    color:#aaa; font-weight:500;
+    background-image:url(../images/more_option.png);
+    background-position:right;
+    background-repeat:no-repeat;
+}
+main .sub_contents .product_contents .option #size option {color:#000;}
+/* =======색상/사이즈 옵션끝=========== */
+main .sub_contents .product_contents .order_num {
+}
+main .sub_contents .product_contents .order_num .num {text-align:right;}
+main .sub_contents .product_contents .order_num .num #product_num {
+    border:1px solid #ccc; width:50px; border-radius: 5px; margin-left:10px;
+}
+main .sub_contents .product_contents .order_num .num button {
+    width:24px; height:24px;
+}
+main .sub_contents .product_contents .order_num .num button img {}
+main .sub_contents .product_contents .order_num .num #minus {
+    margin-left:30px;
+}
+main .sub_contents .product_contents .order_num .num #plus {}
+/* =======주문수량 끝=========== */
+main .sub_contents .product_contents .order_price {
+    margin:40px 0; display:flex; justify-content:space-between;
+}
+main .sub_contents .product_contents .order_price h2 {
+    font-size:1.13rem; font-weight:600;
+}
+main .sub_contents .product_contents .order_price p {
+    
+    font-size:1.13rem; font-weight:600;
+}
+main .sub_contents .product_contents .order_price p .price {font-size:1.13rem; font-weight:600;}
+/* =======주문금액 끝=========== */
+main .sub_contents .product_contents .order_btn {
+    display:flex; justify-content:space-between;
+    padding-top:30px;
+    border-top:1px solid #aaa;
+}
+main .sub_contents .product_contents .order_btn #cart_btn {
+    padding:20px 100px; border:1px solid #aaa; border-radius:10px;
+    font-size:1.56rem;
+}
+main .sub_contents .product_contents .order_btn #buy_btn {
+    background-color:#255D80; color:#fff;  border-radius:10px;
+    padding:20px 100px;
+    font-size:1.56rem;
+}

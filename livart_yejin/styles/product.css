@@ -57,7 +57,8 @@ main .sub_contents .product_contents .price_before .price {
     color:#000; font-size:1.88rem;
 }
 main .sub_contents .product_contents .price_before .price em {
-    font-size:1.88rem; font-weight:700;
+    font-size:1.88rem; font-weight:700; 
+    text-decoration:line-through;
 }
 main .sub_contents .product_contents .price_result {
     margin:40px 0;
@@ -93,7 +94,10 @@ main .sub_contents .product_contents .coupon dd {
     padding:10px; 
 }
 main .sub_contents .product_contents .delivery {margin:35px 0;}
-main .sub_contents .product_contents .benefit dd {display:flex; flex-flow:column nowrap;}
+main .sub_contents .product_contents .benefit dd {
+    display:flex; flex-flow:column nowrap;
+    margin-left:75px;
+}
 main .sub_contents .product_contents .benefit dd a:first-child {margin-bottom:15px;}
 /* =====가격정보내용끝============= */
 main .sub_contents .product_contents .option {

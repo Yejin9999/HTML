@@ -1,13 +1,15 @@
 header {
-    width:1920px; height:80px; padding:0 80px;
+    width:1920px; height:60px; padding:0 80px;
     display:flex; justify-content:space-between;
     align-items:center;
+    background-color:#000;
 }
 header h1 {}
 header h1 a {}
 header h1 a img {}
 header .h_left {}
 header .h_left a {
+    color:#fff;
     margin-right:40px;
     font-size:0.94 rem;
 }

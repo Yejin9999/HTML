@@ -42,7 +42,10 @@
   </div>
   <script>
     $('.content').hide()
-    $('.title').click(function(){$('.content').show()})
+    $('.title').click(function(){
+      $('.content').show()
+      $(this).next
+    })
   </script>
 </body>
 </html>

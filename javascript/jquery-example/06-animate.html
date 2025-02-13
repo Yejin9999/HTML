@@ -53,6 +53,12 @@
     <p>모든 상품 20% 할인! 한정 기간 동안 진행됩니다.</p>
     <button id="closeBanner"  type="button">닫기</button>
   </div>
-
+  <script>
+    $('#closeBanner').click(function(){
+      $('#flashSaleBanner').animate({
+        right:-300
+      },1000);
+    })
+  </script>
 </body>
 </html>

@@ -22,11 +22,12 @@ function thum_remove(){
 function bigSrc(num){
     return bigImage.src = `./images/big${num}.jpg`; 
 }
+
 //썸네일(thum.jpg)에 마우스를 올렸을 떄 큰 이미지 경로가 그에 맞는 big.jpg로 변경
 thumnail[0].addEventListener('mouseover',()=>{
     bigSrc(1);
     thum_remove();
-    thumnail[0].parentElement.classList = 'active';
+    thumnail[0].parentElement.classList = 'acti ve';
 })
 thumnail[1].addEventListener('mouseover',()=>{
     bigSrc(2);
@@ -48,6 +49,8 @@ thumnail[4].addEventListener('mouseover',()=>{
     thum_remove();
     thumnail[4].parentElement.classList = 'active';
 })
+
+
 //마우스를 나가도 올렸을때 바뀐이미지 그대로 유지되고 있으니까 mouseover만 쓰인거임
 //먼저 개별로 다 쓰는 연습을 해야함 (다 쓰고 반복되는 요소를 체크하고 함수생성하는 연습하기)
 

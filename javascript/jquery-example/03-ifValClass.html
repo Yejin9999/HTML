@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>03 쿠폰 할인 적용 예제</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
   <link rel="stylesheet" href="./styles/reset.css">
   <style>
     .message {font-size: 1.2em;margin-top: 10px;}
@@ -28,6 +28,14 @@
   <!-- 결과 메시지 영역 -->
   <div id="discountMessage" class="message"></div>
   <div id="totalPrice" class="message"></div>
-
+  <script>
+    $('#applyCoupon').click(function(){
+      if($('#couponInput').val() = ''){
+        $('#discountMessage').text = '입력해주세요'
+      }else if($('#couponInput').val() != 'ab'){
+        $('#discountMessage').text = '쿠폰번호가 틀렸습니다.'
+      }
+    })
+  </script>
 </body>
 </html>

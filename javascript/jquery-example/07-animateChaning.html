@@ -32,5 +32,12 @@
     <p>최대 50% 할인 이벤트!</p>
     <button id="animateBtn" type="button">자세히 보기</button>
   </div>
+  <script>
+    $('#animateBtn').click(function(){
+      $('#promoBanner').animate({
+        opacity:0.2
+      },1000);
+    })
+  </script>
 </body>
 </html>

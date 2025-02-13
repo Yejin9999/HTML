@@ -128,7 +128,7 @@ console.log(cartPopup, cartBtn, shoppingBtn);
 - toggle, remove 교체, 삭제 등으로 다양한 경우에 사용할 경우
 
 객체.style 사용
-- css 속성 1-3ro 적게 사용할 경우
+- css 속성 1-3개 적게 사용할 경우
 - 객체에 css를 단순히 적용만 할 경우
  */
 

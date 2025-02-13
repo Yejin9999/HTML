@@ -75,7 +75,8 @@ minusBtn.addEventListener('click',()=>{
     orderPrice.innerText = totalPrice.toLocaleString('ko-kr');
 })
 
-//======장바구니 팝업 js
+
+//===============================================장바구니 팝업 js
 
 const cartPopup = document.querySelector('.cart_open_bg');
 const cartBtn = document.querySelector('#cart_btn');
@@ -84,12 +85,15 @@ console.log(cartPopup, cartBtn, shoppingBtn);
 
 //1. 'cartPopup'초기값: 팝업 숨기기
 cartPopup.style.display = 'none';
+
 //2. 'cartBtn' 장바구니 클릭 시
 //3. 팝업 보이기
 cartBtn.addEventListener('click',()=>{
     cartPopup.style.display = 'block';
-    document.body.style.overflow = 'hidden'; //화면세로로 짧게 할 시 스크롤없애기 안움직이게 하는법
+    document.body.style.overflow = 'hidden'; 
+    //화면세로로 짧게 할 시 스크롤없애기 안움직이게 하는법
 })
+
 //4.'shoppingBtn' 팝업 내 '쇼핑계속하기' 클릭 시
 //5. 팝업 숨기기
 shoppingBtn.addEventListener('click',()=>{
@@ -98,30 +102,28 @@ shoppingBtn.addEventListener('click',()=>{
 })
 
 
-//사이즈 클릭 시 활성화 표시하기(배경,글씨 색상 변경)
+
+
+
+//=================================사이즈 클릭 시 활성화 표시하기(배경,글씨 색상 변경)
 //1.각 사이즈 칸 클릭 시
 //2. 위 1 번 대상에만 검정배경/하얀글씨 적용
 const sizeBg = document.querySelectorAll('.opt_btn li')
-const size = document.querySelectorAll ('.opt_btn li a')
-console.log(size,sizeBg);
-console.log(size[0])
+console.log(sizeBg);
+console.log(sizeBg[0])
 //모든함수에 적용되는 값 
-function size_remove() {
-    size[0].parentElement.classList.remove('active');
-    size[1].parentElement.classList.remove('active');
-    size[2].parentElement.classList.remove('active');
-    size[3].parentElement.classList.remove('active');
-    size[4].parentElement.classList.remove('active');
-    size[5].parentElement.classList.remove('active');
-    size[6].parentElement.classList.remove('active');
-    size[7].parentElement.classList.remove('active');
-    size[8].parentElement.classList.remove('active');
-    size[9].parentElement.classList.remove('active');
-    size[10].parentElement.classList.remove('active');
-    size[11].parentElement.classList.remove('active');
-    size[12].parentElement.classList.remove('active');
+function sizeBg_remove() {
+    sizeBg[0].parentElement.classList.remove('active');
+    sizeBg[1].parentElement.classList.remove('active');
+    sizeBg[2].parentElement.classList.remove('active');
+    sizeBg[3].parentElement.classList.remove('active');
+    sizeBg[4].parentElement.classList.remove('active');
+    sizeBg[5].parentElement.classList.remove('active');
+    sizeBg[6].parentElement.classList.remove('active');
+    sizeBg[7].parentElement.classList.remove('active');
+    sizeBg[8].parentElement.classList.remove('active');
+    sizeBg[9].parentElement.classList.remove('active');
+    sizeBg[10].parentElement.classList.remove('active');
+    sizeBg[11].parentElement.classList.remove('active');
+    sizeBg[12].parentElement.classList.remove('active');
 }
-
-size.addEventListener('click',()=>{
-    
-})

@@ -110,8 +110,11 @@ main .md_wrap .md_title {
     display:flex; justify-content:space-between;
 }
 main .md_wrap .md_title h2 {font-size:2.50rem; font-weight:700; margin-bottom:15px;}
-main .md_wrap .md_title .moretab {}
-main .md_wrap .md_title .moretab img {margin-left:5px; position:relative; top:8px;}
+main .md_wrap .md_title a {font-size:0.88rem;}
+main .md_wrap .md_title a img {
+    width:22px; height:22px;
+    margin-left:5px; position:relative; top:5px;
+}
 main .md_wrap ul {
     margin-top:50px;
     display:flex; justify-content:space-between;
@@ -151,7 +154,7 @@ main .md_wrap ul li .contents .product .mddetails .price {
     margin:10px 0; font-size:0.81rem; color:#aaa; text-decoration: line-through;
 }
 main .md_wrap ul li .contents .product .mddetails .saleprice {
-    font-size:0.81rem; font-weight:600
+    font-size:0.81rem; font-weight:600;
 }
 main .md_wrap ul li .contents .product .mddetails .saleprice .sale {
     color:#FF0000; font-size:0.81rem; margin-left:10px;
@@ -164,7 +167,42 @@ main .adbnr2 {margin:160px 0;}
 main .adbnr1 img, 
 main .adbnr2 img {}
 /* 광고배너1/2끝-============= */
+main .hightop_wrap {}
+main .hightop_wrap .hightop_top {display:flex; justify-content:space-between;}
+main .hightop_wrap .hightop_top .hightitle {
+    width:500px; height:650px;
+    background-image:url(../images/hightopbg.jpg);
+}
+main .hightop_wrap .hightop_top .hightitle h3 {font-size:2.50rem; font-weight:800; letter-spacing:-0.04rem;}
+main .hightop_wrap .hightop_top .hightitle > p {
+    float:right;
+    font-size:0.94rem; font-weight:500;letter-spacing:-0.02rem;
+}
+main .hightop_wrap .hightop_top > a {font-size:0.88rem;}
+main .hightop_wrap .hightop_top > a img {
+    width:22px; height:22px;
+    position:relative; top:5px;
+    margin-left:5px;
+}
+/* 하이탑스와이퍼부분 */
+main .hightop_wrap .hightop_swiper {
+    width:960px; height:463px; margin:0 auto;
+    background-color:aqua;
+}
+main .hightop_wrap .hightop_swiper .swiper-wrapper {}
+main .hightop_wrap .hightop_swiper .swiper-wrapper .high1 {}
+main .hightop_wrap .hightop_swiper .swiper-wrapper .high1 ul {}
+main .hightop_wrap .hightop_swiper .swiper-wrapper .high1 ul li {}
+main .hightop_wrap .hightop_swiper .swiper-wrapper .high1 ul li a {}
+main .hightop_wrap .hightop_swiper .swiper-wrapper .high1 ul li a img {}
+main .hightop_wrap .hightop_swiper .swiper-wrapper .high1 ul li .name {margin:20px 0 15px 0;}
+main .hightop_wrap .hightop_swiper .swiper-wrapper .high1 ul li .name a {font-size:0.94rem;}
+main .hightop_wrap .hightop_swiper .swiper-wrapper .high1 ul li .saleprice {font-size:0.81rem; font-weight:600;}
 
+
+
+
+/* 하이탑 끝========================================= */
 main .runstar {
     background-color:#f5f5f5;
     width:1920px;
@@ -243,9 +281,9 @@ main .color .color_wrap .color_contents .color1 .one,
 main .color .color_wrap .color_contents .color2 .three  {margin-right:30px;}
 /* color 끝====================================================================*/
 
-main .limited_wrap {background-color:lime; text-align:center; width:1920px; margin:160px 0;}
+main .limited_wrap {text-align:center; width:1920px; margin:160px 0; background-color:cadetblue;}
 main .limited_wrap h2 {font-size:2.50rem; font-weight:700; margin-bottom:50px;}
-main .limited_wrap ul {background-color:coral; display:flex; justify-content:space-around;}
+main .limited_wrap ul { display:flex; justify-content:space-around;}
 main .limited_wrap ul li {
     width:550px; height:700px; padding:50px;
     background-size:cover; background-position:center;

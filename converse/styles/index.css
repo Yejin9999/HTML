@@ -72,7 +72,7 @@ main .new_wrap .new_swiper .swiper-wrapper .swiper-slide .new .newtxt .price {
 }
 main .new_wrap .new_swiper .swiper-wrapper .swiper-slide .new .newtxt .saleprice {font-size:0.81rem; font-weight:600}
 main .new_wrap .new_swiper .swiper-wrapper .swiper-slide .new .newtxt .saleprice .sale {
-    color:#FF0000; font-size:0.81rem; margin-left:10px;
+    color:#FF0000; font-size:0.81rem; margin-left:5px;
 }
 
 
@@ -138,7 +138,7 @@ main .md_wrap ul li .contents .product .mddetails .saleprice {
     font-size:0.81rem; font-weight:600;
 }
 main .md_wrap ul li .contents .product .mddetails .saleprice .sale {
-    color:#FF0000; font-size:0.81rem; margin-left:10px;
+    color:#FF0000; font-size:0.81rem; margin-left:5px;
 }
 
 
@@ -265,7 +265,7 @@ main .color_all .color_wrap .color_contents .color1 .color .colortxt .saleprice 
     font-size:0.81rem; font-weight:600
 }
 main .color_all .color_wrap .color_contents .color1 .color .colortxt .saleprice .sale {
-    color:#FF0000; font-size:0.81rem; margin-left:10px;
+    color:#FF0000; font-size:0.81rem; margin-left:5px;
 }
 /* 컬러두번째줄 */
 main .color_all .color_wrap .color_contents .color2 {display:flex;}
@@ -282,7 +282,7 @@ main .color_all .color_wrap .color_contents .color2 .color .colortxt .saleprice 
     font-size:0.81rem; font-weight:600
 }
 main .color_all .color_wrap .color_contents .color2 .color .colortxt .saleprice .sale {
-    color:#FF0000; font-size:0.81rem; margin-left:10px;
+    color:#FF0000; font-size:0.81rem; margin-left:5px;
 }
 /* 공통선택자 */
 main .color_all .color_wrap .color_contents .color1 .one,

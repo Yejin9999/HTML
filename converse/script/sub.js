@@ -1,3 +1,4 @@
+
 //키즈 베스트상품 스와이퍼================================
 const kidbestSlide = new Swiper('.best_swiper',{
     autoplay:{

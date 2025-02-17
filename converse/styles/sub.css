@@ -20,6 +20,7 @@ header .h_right a {margin-right:20px;}
 header .h_right a:last-child {margin:0;}
 header .h_right a img {}
 /* header 끝================================= */
+
 main {width:100%; margin:0 auto;}
 main .best_wrap {
     width:1500px; margin:150px auto;
@@ -42,12 +43,15 @@ main .best_wrap .b_left .b_tab {
 main .best_wrap .b_left .b_tab a {
     margin-bottom:20px;
     border-bottom:1px solid #d9d9d9; padding-bottom:12px;
+    transition:transform 0.5s ease;
 }
 main .best_wrap .b_left .b_tab a:last-child {margin:0;}
-main .best_wrap .b_left .b_tab .active {
+main .best_wrap .b_left .b_tab a:hover {
     font-size:1.38rem; font-weight:700;
     border-bottom:1px solid #1C1B1F;
+    transform:scale(1.1);
 }
+
 /* 베스트타이틀부분끝 */
 main .best_wrap .best_swiper {width:1110px; height:480px; }
 main .best_wrap .best_swiper .swiper-wrapper {}
@@ -92,7 +96,10 @@ main .agecontent .age_top .agetitle .agetab .age a {
     padding:10px; background-color: #D9D9D9; color:#fff;
     border-radius:20px; font-size:0.94rem; font-weight:500;
 }
-main .agecontent .age_top .agetitle .agetab .age a:hover {background-color:#3293FF;}
+main .agecontent .age_top .agetitle .agetab .age a:hover {
+    background-color:#3293FF;
+    
+}
 main .agecontent .age_top .agetitle .agetab .age a:last-child {margin:0;}
 main .agecontent .age_top .agetitle .agetab .age .ageactive {}
 main .agecontent .age_top .agetitle .more {font-size:0.88rem;}

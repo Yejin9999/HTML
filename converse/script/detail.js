@@ -1,3 +1,33 @@
+const sizeOption = document.querySelectorAll ('.opt_btn li')
+console.log(sizeOption)
+console.log(sizeOption[0])
+
+function size_remove() {
+    sizeOption[0].parentElement.classList.remove('active');
+    sizeOption[1].parentElement.classList.remove('active');
+    sizeOption[2].parentElement.classList.remove('active');
+    sizeOption[3].parentElement.classList.remove('active');
+    sizeOption[4].parentElement.classList.remove('active');
+    sizeOption[5].parentElement.classList.remove('active');
+    sizeOption[6].parentElement.classList.remove('active');
+    sizeOption[7].parentElement.classList.remove('active');
+    sizeOption[8].parentElement.classList.remove('active');
+    sizeOption[9].parentElement.classList.remove('active');
+    sizeOption[10].parentElement.classList.remove('active');
+    sizeOption[11].parentElement.classList.remove('active');
+}
+
+sizeOption[0].addEventListener('click',()=>{
+    sizeOption[0].parentElement.classList = 'active';
+})
+sizeOption[1].addEventListener('click',()=>{
+    sizeOption[1].parentElement.classList = 'active';
+})
+sizeOption[2].addEventListener('click',()=>{
+    sizeOption[2].parentElement.classList = 'active';
+})
+
+
 
 //상품 썸네일
 //1. 각각의 작은 썸네일 이미지에 마우스올리면

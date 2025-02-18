@@ -1,4 +1,47 @@
+/* //
+const bestTab = document.querySelectorAll ('.best_wrap .b_left .b_tab a')
+console.log(bestTab);
+console.log(bestTab[0]);
+console.log(bestTab[3]);
 
+//활성화되는부분 리셋시키는 함수생성
+function besttab_remove() {
+    bestTab[0].parentElement.classList.remove('active');
+    bestTab[1].parentElement.classList.remove('active');
+    bestTab[2].parentElement.classList.remove('active');
+    bestTab[3].parentElement.classList.remove('active');
+    bestTab[4].parentElement.classList.remove('active');
+}
+
+//
+//마우스올렸을때 활성화된부분 제거-> 활성화되게하기
+bestTab[0].addEventListener('mousover',(e)=>{
+    besttab_remove();
+    e.preventDefault();
+    bestTab[0].parentElement.classList.add('active')
+})
+bestTab[1].addEventListener('mousover',(e)=>{
+    besttab_remove();
+    e.preventDefault();
+    bestTab[1].parentElement.classList.add('active')
+})
+bestTab[2].addEventListener('mousover',(e)=>{
+    besttab_remove();
+    e.preventDefault();
+    bestTab[2].parentElement.classList.add('active')
+})
+bestTab[3].addEventListener('mousover',(e)=>{
+    besttab_remove();
+    e.preventDefault();
+    bestTab[3].parentElement.classList.add('active')
+})
+bestTab[4].addEventListener('mousover',(e)=>{
+    besttab_remove();
+    e.preventDefault();
+    bestTab[4].parentElement.classList.add('active')
+})
+
+ */
 //키즈 베스트상품 스와이퍼================================
 const kidbestSlide = new Swiper('.best_swiper',{
     autoplay:{

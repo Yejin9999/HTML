@@ -1,7 +1,11 @@
-const sizeOption = document.querySelectorAll ('.opt_btn li')
+//상품 사이즈 옵션
+//사이즈에 마우스 클릭 시 배경색상 바뀌기
+
+const sizeOption = document.querySelectorAll ('.opt_btn li a')
 console.log(sizeOption)
 console.log(sizeOption[0])
 
+//활성화되는부분 리셋
 function size_remove() {
     sizeOption[0].parentElement.classList.remove('active');
     sizeOption[1].parentElement.classList.remove('active');
@@ -17,14 +21,70 @@ function size_remove() {
     sizeOption[11].parentElement.classList.remove('active');
 }
 
-sizeOption[0].addEventListener('click',()=>{
-    sizeOption[0].parentElement.classList = 'active';
+//size_remove를 호출 해줘야 활성화가 먼저 리셋된다.
+//클릭 시 a 링크때문에 페이지가 새로고침되는 걸 막기 위해서 (e) 와 e.preventDefault();를 적어줘야한다.
+
+sizeOption[0].addEventListener('click',(e)=>{
+    size_remove();
+    e.preventDefault();
+    /* sizeOption[0].parentElement.classList = 'active'; */
+    sizeOption[0].parentElement.classList.add('active');
 })
-sizeOption[1].addEventListener('click',()=>{
-    sizeOption[1].parentElement.classList = 'active';
+
+sizeOption[1].addEventListener('click',(e)=>{
+    size_remove();
+    e.preventDefault();
+    sizeOption[1].parentElement.classList.add('active');
 })
-sizeOption[2].addEventListener('click',()=>{
-    sizeOption[2].parentElement.classList = 'active';
+sizeOption[2].addEventListener('click',(e)=>{
+    size_remove();
+    e.preventDefault();
+    sizeOption[2].parentElement.classList.add('active');
+})
+sizeOption[3].addEventListener('click',(e)=>{
+    size_remove();
+    e.preventDefault();
+    sizeOption[3].parentElement.classList.add('active');
+})
+sizeOption[4].addEventListener('click',(e)=>{
+    size_remove();
+    e.preventDefault();
+    sizeOption[4].parentElement.classList.add('active');
+})
+sizeOption[5].addEventListener('click',(e)=>{
+    size_remove();
+    e.preventDefault();
+    sizeOption[5].parentElement.classList.add('active');
+})
+sizeOption[6].addEventListener('click',(e)=>{
+    size_remove();
+    e.preventDefault();
+    sizeOption[6].parentElement.classList.add('active');
+})
+sizeOption[7].addEventListener('click',(e)=>{
+    size_remove();
+    e.preventDefault();
+    sizeOption[7].parentElement.classList.add('active');
+})
+sizeOption[8].addEventListener('click',(e)=>{
+    size_remove();
+    e.preventDefault();
+    sizeOption[8].parentElement.classList.add('active');
+})
+sizeOption[9].addEventListener('click',(e)=>{
+    size_remove();
+    e.preventDefault();
+    sizeOption[9].parentElement.classList.add('active');
+})
+sizeOption[10].addEventListener('click',(e)=>{
+    size_remove();
+    e.preventDefault();
+    sizeOption[10].parentElement.classList.add('active');
+})
+sizeOption[11].addEventListener('click',(e)=>{
+    size_remove();
+    e.preventDefault();
+    sizeOption[11].parentElement.classList.add('active');
 })
 
 

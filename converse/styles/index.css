@@ -32,6 +32,7 @@ header nav .h_left > li > .sub {
     transition:transform 0.3s, opacity 0.5s;
 }
 header nav .h_left > li > .sub li {border-bottom:0.5px solid #d9d9d9;}
+header nav .h_left > li > .sub li:last-child{border-bottom:0;}
 header nav .h_left > li > .sub li a {text-align:center; font-size:0.81rem;}
 header nav .h_left > li:hover .sub {
     transform:translateY(0); opacity:1;

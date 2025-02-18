@@ -7,21 +7,41 @@ header {
 header h1 {}
 header h1 a {}
 header h1 a img {}
-header .h_left {}
-header .h_left a {
-    color:#fff;
-    margin-right:40px;
-    font-size:0.94 rem;
+/* 네비탭메뉴 */
+header nav {}
+header nav .h_left {max-width:1000px;} /* x좌표 y좌표 그림자의 흐림정도 색상 */
+header nav .h_left a {/* 공통 */ 
+    display:block; line-height:40px; text-align:center;
 }
-header .h_left a:last-child {margin:0;}
-header .h_left a em {color:#FF0000;}
+header nav .h_left {display:flex;}
+header nav .h_left > li {
+    width:140px;
+    flex:1; position:relative; padding:0 30px;
+}
+header nav .h_left > li > a {font-size:0.94rem; color:#fff;}
+header nav .h_left > li > a em {color:#FF0000;}
+header nav .h_left > li > .sub {
+    margin-top:10px;
+    position:absolute; width:100%; left:0; top:100%;
+    background-color:rgba(255,255,255,0.5);
+    transform:translateY(-30px); /* 초기값 위로 올리기 */
+    opacity:0; /* 초기 숨기기(안보이게하기) opacity는 좀더 부드럽게 나오는 느낌 (display none->block은 탁 나오는 느낌) */
+    height:0; overflow:hidden; /* 대상 선택되지않도록 높이값 0 숨기기 */
+    transition:transform 0.3s, opacity 0.5s;
+}
+header nav .h_left > li > .sub li {border-bottom:0.5px solid #d9d9d9;}
+header nav .h_left > li > .sub li a {text-align:center; font-size:0.81rem;}
+header nav .h_left > li:hover .sub {
+    transform:translateY(0); opacity:1;
+    height:max-content; /* 단순 보이는 요소로 애니메이션적용대상 아님 */
+}
 header .h_right {}
 header .h_right a {margin-right:20px;}
 header .h_right a:last-child {margin:0;}
 header .h_right a img {}
 /* header 끝================================= */
 
-main {width:1202px; margin:150px auto;}
+main {width:1202px; margin:200px auto 150px;}
 main .order_wrap {display:flex; justify-content:space-between;}
 main .order_wrap .photo {text-align:center;}
 main .order_wrap .photo .big {margin-bottom:30px;}
@@ -62,9 +82,10 @@ main .order_wrap .content .benefit dd:last-child {margin-top:5px;}
 main .order_wrap .content .color {}
 main .order_wrap .content .color h2 {font-size:1.13rem; font-weight:500; letter-spacing:-0.02rem;}
 main .order_wrap .content .color .coloroption {margin-top:15px;}
-main .order_wrap .content .color .coloroption a {margin-right:15px;}
+main .order_wrap .content .color .coloroption a {margin-right:15px; }
 main .order_wrap .content .color .coloroption a:last-child {margin:0;}
-main .order_wrap .content .color .coloroption a img {}
+main .order_wrap .content .color .coloroption a img {transition:transform 0.5s;}
+main .order_wrap .content .color .coloroption a img:hover {transform:rotate(-10deg);}
 /* 색상옵션끝 */
 main .order_wrap .content .size {margin:40px 0;}
 main .order_wrap .content .size dt {margin-bottom:15px;}

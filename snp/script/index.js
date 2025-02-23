@@ -46,6 +46,7 @@ const maskSlide = new Swiper('.mask_swiper',{
 
 //리뷰==========
 const reviewSlide = new Swiper('.review_swiper',{
+    spaceBetween:15,
     autoplay:{
         delay:2500,
         disableOnInteraction:false,

@@ -77,7 +77,6 @@ main .best_wrap .b_left .b_tab a:hover {
 /* 베스트타이틀부분끝 */
 main .best_wrap .best_swiper {width:1110px; height:480px; }
 main .best_wrap .best_swiper .swiper-wrapper {}
-main .best_wrap .best_swiper .swiper-wrapper {}
 main .best_wrap .best_swiper .swiper-wrapper .swiper-slide {
     display:flex; justify-content:space-between;
 }
